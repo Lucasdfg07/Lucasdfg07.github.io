@@ -1,0 +1,301 @@
+/*  CSS Index */
+
+/* Body */
+body {
+  width:80%;
+  margin-left:10%;
+}
+/* Header */
+header > .img_header img {
+  height:150px;
+  width:50%;
+  margin-left:10%;
+}
+.img_header , .navbar {
+  display:inline-block;
+}
+/* Header Barra de navegação */
+.navegacao {
+  float:right;
+}
+.navbar, .procura_escola {
+  display:block;
+}
+.navbar ul li {
+  display:inline;
+}
+header > .navegacao > .navbar > ul > li > .a_medio, .a_grande {
+  font-size:1.2em;
+}
+header > .navegacao > .navbar > ul > li > .a_grande {
+  background-color:black;
+  color:white;
+  padding:2px;
+}
+/* Header Botões para pesquisar */
+.procura_escola {
+  float:right;
+}
+header > .navegacao > .procura_escola > a > .botao_sombra {
+  box-shadow:3px 3px 3px;
+  margin-right:20px;
+}
+.procura_avancada {
+  margin-top:10px;
+  float:right;
+}
+/* Header Barra de navegação inferior com botões */
+.navegacao_inferior {
+  float:right;
+  margin-top:-40px;
+}
+.navegacao_inferior > ul > a > li {
+  padding:2px 40px;
+  border:2px solid black;
+  display:inline;
+  margin-left:10px;
+}
+.navegacao_inferior > ul > a {
+  text-decoration: none;
+  color:black;
+}
+
+/* Conteudo Article */
+article {
+  margin-top:50px;
+}
+/* Coluna 1 */
+article > section {
+  width:25%;
+}
+article > section img {
+  height:150px;
+  width:100%;
+}
+.lista_section {
+  margin-bottom:30px;
+}
+article > section > .lista_section > ul > a {
+  text-decoration:none;
+  color:black;
+}
+article > section > .lista_section > ul > a > li{
+  display:block;
+  padding:5px 10px;
+  margin-left:-40px;
+  border:2px solid black;
+  margin-top:10px;
+}
+.lista_section_inferior {
+  border:2px solid black;
+  background-color:gray;
+}
+.lista_section_inferior > ul > li {
+  display:block;
+  margin-left:-40px;
+  padding:5px;
+}
+/* Section e Asides um do lado do outro */
+section, aside {
+  display:inline-block;
+}
+section {
+  float:left;
+}
+/* Padronização de algumas classes para reutilização */
+aside {
+  margin-left:20px;
+}
+article > aside > section {
+  background-color:gray;
+  padding:10px;
+}
+.aside_coluna_1 {
+  width:50%;
+}
+.aside_coluna_2 {
+  width:20%;
+  float:right;
+}
+.conteudo_direita, .conteudo_esquerda {
+  display:inline-block;
+}
+.conteudo_esquerda {
+  float:left;
+}
+.conteudo_direita {
+  float:right;
+}
+/* Primeiro Aside (segunda coluna) */
+aside > .whats_new > .titulo h2, a {
+  display:inline;
+}
+aside > .whats_new > .titulo a {
+  color:black;
+  padding:0px 10px;
+}
+aside > .whats_new > .titulo > .whats_new_link {
+  float:right;
+}
+aside > .whats_new > .titulo > .whats_new_link > .button {
+  font-size:1.5em;
+  font-weight:bold;
+  text-decoration: none;
+  border:2px solid black;
+  padding:0px 5px;
+  border-radius:5px;
+}
+aside > .whats_new > .conteudo_meio {
+  padding-top:10px;
+}
+aside > .whats_new > .conteudo_meio > .conteudo_esquerda {
+  width:30%;
+}
+aside > .whats_new > .conteudo_meio > .conteudo_esquerda img {
+    height:100px;
+    width:100px;
+    margin-top:15px;
+}
+aside > .whats_new > .conteudo_meio > .conteudo_direita {
+  width:70%;
+}
+aside > .whats_new > .conteudo_meio > .conteudo_direita > .titulo {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+aside > .whats_new > .conteudo_meio > .conteudo_direita > .texto_underline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+article > aside > .newsticker {
+  margin-top:20px;
+}
+article > aside > .newsticker > .conteudo_esquerda {
+  width:90%;
+}
+article > aside > .newsticker > .conteudo_direita a {
+  display:block;
+  margin:15px 0px;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  font-size: 1em;
+  border:2px solid black;
+  padding:5px;
+  text-align:center;
+  border-radius:5px;
+}
+article > aside > .calendar {
+  margin-top:20px;
+}
+article > aside > .calendar > .conteudo_esquerda, .conteudo_direita {
+  margin-top:-15px;
+}
+article > aside > .calendar > .conteudo_esquerda {
+  width:30%;
+}
+article > aside > .calendar > .conteudo_esquerda p {
+  font-size:0.9em;
+}
+article > aside > .calendar p {
+  margin:8px 0px;
+}
+article > aside > .calendar > .conteudo_direita {
+  width:70%;
+  padding-top:20px;
+}
+article > aside > .calendar > .conteudo_direita a {
+  float:right;
+  margin-top:-5px;
+  color:black;
+}
+/* Segundo Aside (terceira coluna) */
+article > aside > .slide {
+  height:295px;
+  width:90%;
+  background-color:white;
+  border:2px solid black;
+}
+article > aside > .slide img {
+  position:absolute;
+}
+article > aside > .slide > .links {
+  margin-top:130%;
+  float:right;
+}
+article > aside > .slide a {
+  display:inline;
+  margin-top:100%;
+  text-decoration:none;
+  color:black;
+  padding:5px;
+  padding:3px 8px;
+}
+article > aside > .slide > .links > .active, .stop {
+  border:2px solid black;
+  border-radius:100%;
+  font-weight: bold;
+  font-size:0.8em;
+}
+article > aside > .slide > .links > .stop {
+  border-radius:5px;
+}
+article > aside > .aside_coluna_2_section {
+  margin-top:20px;
+  height:132px;
+}
+article > aside > .aside_coluna_2_section > .conteudo_esquerda {
+  width:30%;
+}
+article > aside > .aside_coluna_2_section > .conteudo_direita {
+  width:70%;
+}
+article > aside > .aside_coluna_2_section > .conteudo_direita p {
+  font-size:1.2em;
+  font-weight:bold;
+}
+/* Footer */
+footer {
+  border-top: 2px solid black;
+  margin-top:20px;
+  font-size:0.7em;
+  padding-top:10px;
+}
+footer > .footer_menu {
+  margin-left:-30px;
+  width:40%;
+}
+footer > .footer_page_top {
+  padding-left:1%;
+  width:10%;
+}
+footer > .footer_descricao {
+  width:40%;
+}
+footer > .footer_page_top, .footer_descricao {
+  margin:0px 30px;
+}
+footer > .footer_page_top a {
+  border:1px solid black;
+  height:20px;
+  width:20px;
+  border-radius:5px;
+  text-decoration: none;
+  color:black;
+  font-size: 1.2em;
+  margin-left:40%;
+}
+footer > .footer_page_top a, .footer_page_top span {
+  text-align: center;
+  display:block;
+}
+footer > .footer_menu, .footer_page_top, .footer_descricao {
+  display:inline-block;
+}
+footer > .footer_descricao p {
+  float:right;
+}
+footer > .footer_menu > ul > li {
+  display:inline;
+}
