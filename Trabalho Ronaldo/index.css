@@ -218,6 +218,8 @@ article > aside > .slide {
   border:2px solid black;
 }
 article > aside > .slide img {
+  height:200px;
+  width:195px;
   position:absolute;
 }
 article > aside > .slide > .links {
@@ -245,11 +247,15 @@ article > aside > .aside_coluna_2_section {
   margin-top:20px;
   height:132px;
 }
+article > aside > .aside_coluna_2_section img {
+  height:100px;
+  width:100px;
+}
 article > aside > .aside_coluna_2_section > .conteudo_esquerda {
   width:30%;
 }
 article > aside > .aside_coluna_2_section > .conteudo_direita {
-  width:70%;
+  width:40%;
 }
 article > aside > .aside_coluna_2_section > .conteudo_direita p {
   font-size:1.2em;
