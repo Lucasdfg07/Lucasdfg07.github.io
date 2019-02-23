@@ -5,8 +5,8 @@ var num = 0;
 function fatorial(i) {
   while(num!=i){
   num = i *(i-1);
-  return num;  
-  }  
+  return num;
+  }
 }
 
 fatorial (i);
@@ -28,13 +28,16 @@ alert(par_impar(num));
 
 //validar email
 var valida = prompt('Digite seu Email:');
-var email = new RegExp(/^\w*(\.\w*)?@\[a-z].[a-z]+(\.[a-z]+)?$/);
+var email = new RegExp(/^\w*(\.\w*)?@[a-z].[a-z]+(\.[a-z]+)?$/);
 
+function Email(email, valida) {
+  if (email.test(valida)) {
+    alert('Email Válido.');
 
-if (email.test(valida)) {
-  alert('Email Válido.');
-  
-} else {
-  
-  alert('Email Inválido.');
+  } else {
+
+    alert('Email Inválido.');
+  }
 }
+
+Email(email, valida);
