@@ -1,0 +1,234 @@
+/* CSS Encontre Seu Dentista */
+
+.encontre_seu_dentista {
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 160px 0px rgba(0,0,0,0.1)inset;
+  height:300px;
+}
+.dentista_top {
+    background-color: #aa375a;
+    padding:10px;
+    height:40px;
+    font-size:1.1em;
+}
+.botao_seta {
+  margin-left:170px;
+}
+.Brasil {
+  background:rgba(255,255,255,0.6);
+}
+.Brasil img {
+  position:absolute;
+  margin-top:10px;
+  height:300px;
+  width:90%;
+}
+.Resultado {
+  background-color: #aa375a;
+  height:30px;
+  padding:4px;
+}
+.Resultado_navbar {
+  margin-top:100px;
+  background-color: #f7f6f6;
+  height:30px;
+}
+.Resultado span {
+  text-transform:uppercase;
+  padding-left:10px;
+  font-size:1.2em;
+}
+.Mapa {
+  float:right;
+  margin-top:-50px;
+  margin-right:60px;
+}
+.perfil {
+  margin-top:40px;
+}
+.dentistas {
+  font-size:0.86em;
+  margin-top:10px;
+  height:200px;
+}
+
+.bg-light {
+  background-color: #F8F8FF;
+}
+#fBusca1, #fBusca2 {
+  float:right;
+  border-radius:100%;
+  height:25px;
+  width:25px;
+  border:none;
+}
+#fBusca2 {
+  margin-top:45px;
+  margin-bottom:20px;
+  margin-right:60px;
+}
+/* Media Querys para Alterar resolução */
+@media screen and (max-width: 767px) {
+  .encontre_seu_dentista {
+    height: 400px;
+  }
+  .botao_seta {
+  margin-top:-10px;
+  margin-left:40%;
+  }
+  .form2 input {
+    width:85%;
+  }
+  .imagem_primeira_linha {
+    margin-top:50px;
+  }
+  .Resultado-busca {
+    margin-top:150px;
+  }
+  #fBusca2 {
+  margin-top:-25px;
+  margin-right:-25px;
+  }
+  .page-header, .informacoes {
+    font-size:0.9em;
+    margin-left:120px;
+  }
+  .col-md-10 {
+    margin-top:-160px;
+    padding-left:80px;
+  }
+  .dentistas img {
+    margin-top:20px;
+  }
+  .Mapa {
+    margin-top:-25px;
+  margin-right:-20px;
+  }
+  .dentista_top {
+  font-size:0.87em;
+  }
+  .Brasil img {
+   width:100%;
+  height:170px;
+  margin-left:-10px;
+  }
+  .col-md-10 {
+   margin-left:-90px;
+  font-size:0.87em;
+  }
+  .doctor-name {
+    font-size:1.2em;
+    font-weight:700;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .encontre_seu_dentista {
+    height: 400px;
+  }
+  .botao_seta {
+  margin-top:30px;
+  margin-left:310px;
+  }
+  .form2 input {
+    width:85%;
+  }
+  .Resultado-busca {
+    margin-top:400px;
+  }
+  #fBusca2 {
+  margin-top:-25px;
+  margin-right:30px;
+  }
+  .page-header, .informacoes {
+    font-size:0.9em;
+    margin-left:120px;
+  }
+  .col-md-10 {
+    margin-top:-160px;
+    padding-left:80px;
+  }
+  .dentistas img {
+    margin-top:20px;
+  }
+  .Mapa {
+    margin-top:-25px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .encontre_seu_dentista {
+    height: 300px;
+  }
+  .botao_seta {
+  margin-top:60px;
+  margin-left:140px;
+  }
+  .Resultado-busca {
+    margin-top:10px;
+  }
+  #fBusca2 {
+  margin-top:45px;
+  margin-bottom:20px;
+  margin-right:60px;
+  }
+  .page-header, .informacoes {
+    font-size:1em;
+    margin-left:120px;
+  }
+  .col-md-10 {
+    margin-top:10px;
+    padding-left:10px;
+  }
+  .dentistas img {
+    margin-top:10px;
+  }
+  .Mapa {
+  float:right;
+  margin-top:-50px;
+  margin-right:-260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .encontre_seu_dentista {
+    height: 300px;
+  }
+  .imagem_primeira_linha h4 {
+    font-family:inherit;
+    margin-top:60px;
+    padding-left:18%;
+  }
+  .botao_seta {
+  margin-top:50px;
+  margin-left:180px;
+  }
+  .form2 input {
+    width:100%;
+  }
+  .Resultado-busca {
+    margin-top:0px;
+  }
+  #fBusca2 {
+  margin-top:45px;
+  margin-bottom:20px;
+  margin-right:60px;
+  }
+  .page-header, .informacoes {
+    font-size:1em;
+    margin-left:120px;
+  }
+  .col-md-10 {
+    margin-top:10px;
+    padding-left:10px;
+  }
+  .dentistas img {
+    margin-top:10px;
+  }
+  .Mapa {
+  float:right;
+  margin-top:-50px;
+  margin-right:-260px;
+  }
+}

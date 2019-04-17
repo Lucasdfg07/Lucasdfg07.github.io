@@ -1,0 +1,38 @@
+
+.banner img {
+  width:98%;
+  margin-top:50px;
+}
+.conteudo-texto {
+  font-size:0.9em;
+}
+.page-header h2 {
+  font-size:1.5em;
+  font-weight:bold;
+}
+.conteudo-texto span {
+  background:#FFF;
+  height:18px;
+  width:18px;
+  float:right;
+  padding-left: 4.5px;
+  padding-top:1px;
+  border:1px solid black;
+  border-radius:5px;
+}
+.Paginacao {
+  margin-top:50px;
+  margin-right:60px;
+}
+.Paginacao a {
+  padding-left:15px;
+  color: #555555;
+  font-weight:bold;
+  text-decoration:none;
+}
+.Paginacao span {
+  color: #ad395c;
+}
+.a_select:hover {
+  color: #ad395c;
+  }

@@ -1,0 +1,38 @@
+﻿.Dica
+{
+    position: relative;
+    display: block;
+    margin: 50px 0 30px;
+}
+.Dica h1
+{
+    position: relative!important;
+    display: block;
+    font-size: 17pt!important;
+    padding: 0 0 10px;
+    color: #9c274a;
+    border-bottom: solid 1px #eaeaea;
+    width: 100%;
+    margin: 20px 0;
+}
+.Dica span
+{
+    position: relative!important;
+    display: block!important;
+    color: #555555;
+    font-size: 10pt;
+    margin-top: 10px;
+}
+.Dica span p
+{
+    line-height: 20px;
+}
+.Dica a
+{
+    position: relative;
+    float: right;
+    margin: 20px;
+    color: #9c274a;
+    font-size: 10pt;
+    font-style: italic;
+}

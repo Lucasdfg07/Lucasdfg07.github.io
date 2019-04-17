@@ -1,0 +1,34 @@
+<div class="container">
+  <h1>Bem vindo(a) à tela de cadastro de Estágios!</h1>
+  <p></p>
+
+  <%= form_with(model: @users, url: {action: "update"}, local: true) do |f| %>
+    <p class="navbar-text pull-right">
+    <% if user_signed_in? %>
+      <div class="conteudo">
+        <% if current_user.role == "Administrador" %>
+        <span>Usuário: <strong><%= session[:nome_user] %></strong></span>
+
+        <hr />
+
+        <div class="field">
+          <%= f.label :situação_do_usuário %><br />
+          <%= f.select :situacao, @values_situacao, selected: "Revisar" %>
+        </div>
+
+        <%= f.submit "Salvar", :class => 'btn btn-success' %>
+
+        <hr />
+        <% else %>
+          <span>Usuário: <strong><%= current_user.nome %></strong></span>
+
+          <hr />
+          <h3>Desculpe, você não tem permissão para visualizar essa página.</h3>
+        <% end %>
+
+        <%= link_to "Voltar", :back, :class => 'btn btn-primary' %>
+      </div>
+
+    <% end %>
+  <% end %>
+</div>

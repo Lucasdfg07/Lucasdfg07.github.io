@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Uniodonto Campos</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">  
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">  
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">  
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/Master.css" rel="stylesheet">
+  <link href="CSS/EncontreSeuDentista.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <!-- Navbar fixada no topo -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="row navbar" style="padding:10px 10px;">
+          
+            <div class="col-md-4">
+              <a href="index.html" class="navbar-brand">
+              <span class="img-logo"><a href="http://uniodontocampos.com.br/"><img src="Images/logo.png" class="img_224x45"/></a></span></a>
+            </div>
+        
+            <div class="navegar_jquery col-md-8">
+              <div class="col-md-6"><img src="images/telefones.png" class="telefone"/></div>
+      
+              <div class="col-md-6">
+                <div class="col-md-6"><img src="Images/restrito_top.png" class="selecione_categoria"/></div>
+                <br />
+                <br />
+          
+                <div class="col-md-6">
+                  <div class="col-md-4"><a href="http://prestador.odontosfera.com.br/login.aspx?operadora=402516" class="cooperado">
+                  <img src="Images/restrito_cooperado.png" /></a></div>
+            
+                  <div class="col-md-4"><a href="http://cliente.odontosfera.com.br/Login.aspx?operadora=402516" class="beneficiario" style="padding-left:50px;">
+                  <img src="Images/restrito_beneficiario.png" /></a></div>
+            
+                  <div class="col-md-4"><a href="http://cliente.odontosfera.com.br/Login.aspx?operadora=402516" class="empresa" style="padding-left:110px;">
+                  <img src="Images/restrito_empresa.png" /></a></div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+        
+        <!-- Botão da Navbar. (aparece em resolução < 768px) -->
+        <div class="navbar-header" style="padding:10px 0px">
+          <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alternar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav" style="margin-top:-10px;">
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="Institucional.html">INSTITUCIONAL</a></li>
+            <li><a href="Planos.html">PLANOS</a></li>
+            <li><a href="EncontreSeuDentista.html">ENCONTRE SEU DENTISTA</a></li>
+            <li><a href="FaleConosco.html">FALE CONOSCO</a></li>
+            <li><a href="DicasDeSaude.html">DICAS DE SAÚDE</a></li>
+            
+          </ul>
+        </div>
+      
+    </nav>
+    
+    <div class="container">
+      <div class="col-md-5 encontre_seu_dentista" style="margin-top:100px;padding-top:10px;">
+        <div class="dentista_top">
+          <span style="color:#FFF;"><b>ENCONTRE SEU DENTISTA</b></span>
+          <img src="Images/lupa.png" style="float:right;"/>
+        </div>
+        
+        <div class="dentista_conteudo">
+          <form method="POST" id="frmMainSearch" class="form">
+            <div class="form1"  style="margin-top:30px;">
+              <div class="col-md-6">
+                <span><b>Especialidade</b></span>
+                <br />
+                <br />
+                <select style="width:85%;" ID="fEspecialidade" Class="fEspecialidade" Enabled="True">
+                  <option class="active" value="Todas">Todas</option>
+                  <option value="Cirurgia e Traumatologia Buco Maxilo Facial">Cirurgia e Traumatologia Buco Maxilo Facial</option>
+                  <option value="Clínica Geral">Clínica Geral</option>
+                  <option value="Emergência 24 horas">Emergência 24 horas</option>
+                  <option value="Endodontia">Endodontia</option>
+                  <option value="Odontologia">Odontologia</option>
+                  <option value="Estomatologia">Estomatologia</option>
+                  <option value="Implantodontia">Implantodontia</option>
+                  <option value="Odontopediatria">Odontopediatria</option>
+                  <option value="Ortodontia e Ortopedia Funcional dos Maxilares">Ortodontia e Ortopedia Funcional dos Maxilares</option>
+                  <option value="Perícia odontológica">Perícia odontológica</option>
+                  <option value="Periodontia">Periodontia</option>
+                  <option value="Prótese Dentária">Prótese Dentária</option>
+                  <option value="Radiologia odontológica">Radiologia Odontológica</option>
+                </select>
+                <br />
+                <br />
+              </div>
+            
+              <div class="col-md-6 cidade_div">
+                <span><b>Cidade</b></span>
+                <br />
+                <br />
+                <select style="width:85%;" ID="fCidade" class="fCidade">
+                  <option class="active" value="Todas">Todas</option>
+                  <option value="Campos dos Goytacazes">Campos dos Goytacazes</option>
+                  <option value="São Fidélis">São Fidélis</option>
+                  <option value="São Francisco do Itabapoana">São Francisco do Itabapoana</option>
+                  <option value="São João da Barra">São João da Barra</option>
+                </select>
+                <button id="fBusca1" value="enviar"><span class="glyphicon glyphicon-search" style="padding-top:2px;"></span></a>
+                <br />
+                <br />
+              </div>
+            </div>
+          </form>
+            
+            <form method="POST" id="frmSearchByName" class="form2">
+              <div class="col-md-9">
+                <span><b>Por Nome</b></span>
+                <br />
+                <br />
+                <input type="text" class="form-control fNome" id="fNome" placeholder="Digite o nome a pesquisar." />
+              </div>
+              <div class="col-md-3">
+                <button id="fBusca2" value="enviar"><span class="glyphicon glyphicon-search search1"></span></button>
+              </div>
+              <br />
+              <br />
+              
+            </form>                
+          
+            <div class="botao_seta">
+              <img src="Images/botaoseta.png" class="BotaoSeta"/>
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="col-md-7 imagem_primeira_linha">
+        <a href="Brasil.html" class="Brasil">
+          <img src="Images/dentistas.jpg" data-toggle="tooltip" data-placement="bottom" title="Ou clique aqui para procurar em todo o Brasil !" />
+        </a>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="container Resultado-busca">
+        <div class="Resultado_navbar">
+          <div class="Resultado col-md-6">
+            <span style="color:#FFF;"><b>Resultado da Busca</b></span>
+          </div>
+        </div>
+        
+        <div class="Meio" id="divDentistas">  
+          <div class="container">
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">ANA LILA ARAGÃO VIANA</h3>
+                  <span class="especialidade"><i>Odontopediatria</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Primeiro de Maio, 38 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27331431, (22) 997416180</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Primeiro+de+Maio,+38+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-145/@-21.7599422,-41.3309269,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd4484df330e1:0x79691c93c8ac2db9!8m2!3d-21.7599422!4d-41.3287382' 
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">ANDRE ABREU MENDES</h3>
+                  <span class="especialidade"><i>Clínica Geral, Ortodontia e Ortopedia Funcional dos Maxilares</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Guaraciaba, 220 - Altos - CENTRO - São Fidélis</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27581224</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Guaraciaba,+220+-+Lot.+Santa+Lucia,+S%C3%A3o+Fid%C3%A9lis+-+RJ,+28400-000/@-21.6488183,-41.7493175,17z/data=!3m1!4b1!4m5!3m4!1s0xbdb21c89178f5f:0x2e696e8bcd9cd447!8m2!3d-21.6488233!4d-41.7471288' 
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">ANDRE BAARS BAPTISTA</h3>
+                  <span class="especialidade"><i>Cirurgia e Traumatologia Buco Maxilo Facial</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Treze de Maio, 286 - Sala 708 Edificio Medical Center - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)999014911, (22)30524808</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Bar%C3%A3o+da+Lagoa+Dourada,+234+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-119/@-21.7549351,-41.3359357,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd4442c4869bb:0x468f15875236699a!8m2!3d-21.7549401!4d-41.333747' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">BIANCA PORTILHO FRANCO ROCHA</h3>
+                  <span class="especialidade"><i>Clínica Geral</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Br. da Lagoa Dourada, 234 - Sala 401 Edificio Santa Apolonia - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27264699</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Bar%C3%A3o+da+Lagoa+Dourada,+234+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-119/@-21.7549351,-41.3359357,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd4442c4869bb:0x468f15875236699a!8m2!3d-21.7549401!4d-41.333747' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">CERO</h3>
+                  <span class="especialidade"><i>Radiologia Odontológica</i></span>
+                </div>
+                <div class="informacoes">
+                  
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Barão da Lagoa Dourada, 237 - Sala 10 e 11 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27220094, (22) 27230116</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Bar%C3%A3o+da+Lagoa+Dourada,+237+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-119/@-21.7538432,-41.3351129,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd445b00cf5fd:0xaf0aabd187e3b3fa!8m2!3d-21.7538482!4d-41.3329242' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">CRISTIANE COSTA DE MORAES MAIA</h3>
+                  <span class="especialidade"><i>Clínica Geral, Endodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Alvarenga Pinto, 171 - Loja 3 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 999188774</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Alvarenga+Pinto,+171+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-185/@-21.7576348,-41.3381207,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd440d3a1ca95:0xaacb26282747cebf!8m2!3d-21.7576398!4d-41.335932' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">CRISTIANO SARDINHA COSTA</h3>
+                  <span class="especialidade"><i>Periodontia, Implantodontia, Prótese Dentária</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Praça São Salvador, 41 - Sala 1201 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27231839</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Pra%C3%A7a+S%C3%A3o+Salvador,+41+-+Centro,+Campos+dos+Goitacazes+-+RJ/@-21.7562118,-41.3252131,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44cfd79d991:0xbf89929747d4b802!8m2!3d-21.7562168!4d-41.3230244' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">DANIELLE MAYERHOFER BARRETO</h3>
+                  <span class="especialidade"><i>Endodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Saldanha Marinho, 416 - Sala 218 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 999243682</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Saldanha+Marinho,+416+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28010-272/@-21.7626036,-41.3266805,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44a0ae82559:0x93a18c7631554fe9!8m2!3d-21.7626086!4d-41.3244918' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">DÉCIO DUNCAN LIMA</h3>
+                  <span class="especialidade"><i>Clínica Geral, Prótese Dentária, Implantodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Saldanha Marinho, 416 - Sala 201 - Vip's Center Shopping - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 2724-2524</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Uniodonto/@-21.762323,-41.3264706,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44a6f005449:0x9f223839ae975a8c!8m2!3d-21.762328!4d-41.3242819' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">FABRINA DE VARGAS TEIXEIRA</h3>
+                  <span class="especialidade"><i>Clínica Geral, Prótese Dentária</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua J, Nº 15 Loteamento Porto Seguro - São João da Barra</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 99121702</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Sr.+dos+Passos,+166+-+Chatuba,+S%C3%A3o+Jo%C3%A3o+da+Barra+-+RJ/@-21.6354608,-41.0518319,17z/data=!3m1!4b1!4m5!3m4!1s0xbe8e034b8b0459:0x20bd4e00a83c35ce!8m2!3d-21.6354658!4d-41.0496432' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">FLAVIA VIEIRA BORGES BARROS</h3>
+                  <span class="especialidade"><i>Clínica Geral</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Praça São Salvador, 21 - Sala 1402 Ed. Cidade de Campos - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 3052-2770, (22)99931-2882</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Condom%C3%ADnio+do+Edif%C3%ADcio+Cidade+Campos/@-21.7557114,-41.3252606,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44c5c97835f:0x89e67e65cd9e0c72!8m2!3d-21.7557164!4d-41.3230719' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">FRANCISCO SERGIO OLIVEIRA BARROS</h3>
+                  <span class="especialidade"><i>Clínica Geral, Periodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Praça São Salvador, 21 - Sala 1402 Ed. Cidade de Campos - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 3052-2770, (22)99931-2882</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Condom%C3%ADnio+do+Edif%C3%ADcio+Cidade+Campos/@-21.7557114,-41.3252606,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44c5c97835f:0x89e67e65cd9e0c72!8m2!3d-21.7557164!4d-41.3230719' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">GISELE GONÇALVES</h3>
+                  <span class="especialidade"><i>Endodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Visconde de Itaboraí, Nº 139, Bairro Parque Rosário - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)27352591</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com/maps/search/Rua+Visconde+de+Itabora+,+N+139/@-21.7674707,-41.3299153,17z/data=!3m1!4b1' 
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">GUSTAVO CAMPOS FERREIRA</h3>
+                  <span class="especialidade"><i>Prótese Dentária, Ortodontia e Ortopedia Funcional dos Maxilares</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Dr. Lacerda Sobrinho, 132 - Sala 106 Ed. Gallery - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27350282</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Guaraciaba,+220+-+Lot.+Santa+Lucia,+S%C3%A3o+Fid%C3%A9lis+-+RJ,+28400-000/@-21.6488183,-41.7493175,17z/data=!3m1!4b1!4m5!3m4!1s0xbdb21c89178f5f:0x2e696e8bcd9cd447!8m2!3d-21.6488233!4d-41.7471288' 
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">GUSTAVO FERREIRA ANDINOS MUNIZ</h3>
+                  <span class="especialidade"><i>Endodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Av Pelinca, Nº 336 – Sala 301 - Bairro Parque Tamandaré - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 2731-3901</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com/maps?q=Av+Pelinca,+N+336&entry=gmail&source=g' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+            
+            <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">ISABELLA TERRA TANUS KHOURI</h3>
+                  <span class="especialidade"><i>Clínica Geral, Estomatologia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Alvarenga Filho, 114 - Sala 403 Pelinca - CENTRO - Campos dos Goytacazes </span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27221427</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Alvarenga+Filho,+114+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-125/@-21.7602082,-41.3335125,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd447fb166275:0xca3fe533ee61a626!8m2!3d-21.7602132!4d-41.3313238' 
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">HELOÍSA SARDINHA</h3>
+                  <span class="especialidade"><i>Endodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">  Rua Saldanha Marinho, 416, Sala 226, Shopping Vips Center, Bairro Centro - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)27240281</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com/maps/place/Av.+Pelinca,+336+-+Parque+Tamandar%C3%A9,+Campos+dos+Goitacazes+-+RJ,+28035-053/@-21.7568102,-41.3395353,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd440e06e5995:0x94b2a7f50efaf176!8m2!3d-21.7568102!4d-41.3373466' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">JAQUELINE ANTUNES JACYNTHO</h3>
+                  <span class="especialidade"><i>Odontopediatria</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address"> Rua Alvarenga Filho, 114, Sala 403, Centro, Edifício CDT - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)27221427</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com/maps/place/R.+Alvarenga+Filho,+114+-+403+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-125/@-21.7602132,-41.3335125,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd447fb166275:0x9469462f23a403b7!8m2!3d-21.7602132!4d-41.3313238' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">JOAO JOSE QUINTINO BARRETO</h3>
+                  <span class="especialidade"><i>Clínica Geral, Emergência 24 horas</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua João Pessoa, 179 - Sala 03 - PELINCA - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)998416566, (22)27243370</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Jo%C3%A3o+Pessoa,+179+-+Centro,+Campos+dos+Goitacazes+-+RJ/@-21.758046,-41.326634,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44c75d5213d:0x1047f45f45776446!8m2!3d-21.758051!4d-41.3244453' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">JOSÉ LUIZ CAETANO VIEIRA</h3>
+                  <span class="especialidade"><i>Ortodontia e Ortopedia Funcional dos Maxilares</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Barão da Lagoa Dourada, 247 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 2733-0949, (22)99915-0882</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Bar%C3%A3o+da+Lagoa+Dourada,+247+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-119/@-21.7540611,-41.3352014,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd445b732b87f:0x86cfd140ce330eca!8m2!3d-21.7540661!4d-41.3330127' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">JULIANA FILETTI CASTILHO</h3>
+                  <span class="especialidade"><i>Clínica Geral, Ortodontia e Ortopedia Funcional dos Maxilares</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Voluntários da Pátria, N 500, Sala 1403, Edifício Platinum - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27352375</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Volunt%C3%A1rios+da+P%C3%A1tria,+500+-+Parque+Avenida+Pelinca,+Campos+dos+Goitacazes+-+RJ/@-21.7613754,-41.335073,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd43865f3fd5d:0x6ea5a49d60d8eac0!8m2!3d-21.7613804!4d-41.3328843' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">KARINA ABDU DE ARAUJO</h3>
+                  <span class="especialidade"><i>Clínica Geral</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Av. Edenites da Silva Viana, 165, Altos, Centro, São Francisco de Itapaboana - RJ</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27891674 / 998741291</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Hotel+Itabapoana+Palace/@-21.4832898,-41.1059559,17z/data=!3m1!4b1!4m5!3m4!1s0xbebdd72ac094ed:0x43560752be385b68!8m2!3d-21.4832898!4d-41.1037672?hl=pt-BR' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">KARINA ABDU DE ARAUJO</h3>
+                  <span class="especialidade"><i>Clínica Geral</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Av. Principal, 78 - Odontomed - Gargau - São Francisco de Itabapoana / RJ</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27897093  / 998613857</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Av.+Principal,+78+-+Centro,+S%C3%A3o+Francisco+de+Itabapoana+-+RJ,+28230-000/@-21.4898764,-41.0682659,17z/data=!3m1!4b1!4m5!3m4!1s0xbe96477c4a22d1:0x33e8afa1dbd4f487!8m2!3d-21.4898764!4d-41.0660772?hl=pt-BR' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">LIDIA CRISTINA AREAS DA SILVA</h3>
+                  <span class="especialidade"><i>Clínica Geral, Endodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Av. Alberto Torres, 371 - Sala 909 Ed. Centro Executivo - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)999026141, (22)27334405</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Av.+Alberto+T%C3%B4rres,+371+-+Parque+Leopoldina,+Campos+dos+Goitacazes+-+RJ,+28051-286/@-21.7520427,-41.3363404,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd444e8ab5be9:0xf4eb66bd9d654f34!8m2!3d-21.7520477!4d-41.3341517' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+        
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">LUIZ MAURÍCIO</h3>
+                  <span class="especialidade"><i>Odontopediatria</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address"> Rua Ipiranga, 56, Sala 11, Centro - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)27257585</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com/maps/place/R.+Ipiranga,+56+-+11+-+Centro,+Campos+dos+Goitacazes+-+RJ/@-21.7674767,-41.3225611,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd5cb2381cb69:0xe26f18e4eca485a1!8m2!3d-21.7674767!4d-41.3203724' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">LUIZ RODRIGO CORTES LOPES</h3>
+                  <span class="especialidade"><i>Implantodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Voluntários da Pátria, N 500, Sala 1403, Edifício Platinum - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 2735-2375 / (22) 99235-1613</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Volunt%C3%A1rios+da+P%C3%A1tria,+500+-+Parque+Avenida+Pelinca,+Campos+dos+Goitacazes+-+RJ/@-21.7613754,-41.335073,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd43865f3fd5d:0x6ea5a49d60d8eac0!8m2!3d-21.7613804!4d-41.3328843' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">MARCELO GOULART GARCIA</h3>
+                  <span class="especialidade"><i>Clínica Geral</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span  class="address">Rua Primeiro de Maio, 38 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 2733-1431/ (22) 99741-6180</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com/maps/place/R.+Primeiro+de+Maio,+38+-+Centro,+Campos+dos+Goytacazes+-+RJ,+28035-145/@-21.7599422,-41.3309269,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd4484df330e1:0x79691c93c8ac2db9!8m2!3d-21.7599422!4d-41.3287382' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">MARCOS LINCOLN SOUZA MUNIZ JR</h3>
+                  <span class="especialidade"><i>Clínica Geral, Prótese Dentária, Implantodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span  class="address">Av. Pelinca, 336 - Sala 301 - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27237343, (22) 999497075</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Av.+Pelinca,+336+-+Parque+Tamandar%C3%A9,+Campos+dos+Goitacazes+-+RJ,+28035-053/@-21.7573665,-41.3391185,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd440c4af585d:0x6959303cdcad9b3!8m2!3d-21.7573715!4d-41.3369298' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">MARIA MARTA MUNIZ SOUZA CRUZ</h3>
+                  <span class="especialidade"><i>Clínica Geral, Prótese Dentária</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua dos Goitacazes, 850 - Loja 01 - IPS - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)99978-0836/ (22)2741-3450/ (22) 2733-1748</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">MARIA MARTHA MUNIZ SOUZA CRUZ</h3>
+                  <span class="especialidade"><i>Clínica Geral</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua dos Passos, 166, CENTRO - São João da Barra</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22)999121702, (22)27413450</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Sr.+dos+Passos,+166+-+Chatuba,+S%C3%A3o+Jo%C3%A3o+da+Barra+-+RJ/@-21.6354608,-41.0518319,17z/data=!3m1!4b1!4m5!3m4!1s0xbe8e034b8b0459:0x20bd4e00a83c35ce!8m2!3d-21.6354658!4d-41.0496432' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">MICHELINE LEAL MEIRELLES DUNCAN</h3>
+                  <span class="especialidade"><i>Clínica Geral e Periodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Saldanha Marinho, 416, Sala 201 - Vip's Center Shopping - Centro - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 2724-2524</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Saldanha+Marinho,+416+-+Centro,+Campos+dos+Goytacazes+-+RJ,+28010-272/@-21.762351,-41.3263647,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44a6f774e09:0x7ad38995ef32c090!8m2!3d-21.762351!4d-41.324176' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">PEDRO FRANCO DOS SANTOS NETO</h3>
+                  <span class="especialidade"><i>Clínica Geral, Endodontia</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Br. da Lagoa Dourada, 234 - Sala 401 Ed. Santa Apolonia - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 2726-4699</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Bar%C3%A3o+da+Lagoa+Dourada,+234+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28035-119/@-21.7549351,-41.3359357,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd4442c4869bb:0x468f15875236699a!8m2!3d-21.7549401!4d-41.333747' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">PATRICIA KENNY</h3>
+                  <span class="especialidade"><i>Perícia odontológica</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address"> Rua Saldanha Marinho, Nº 450, Sala 904, Edifício Connect - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 3026-2759 ou (22) 99974-2244</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com/maps/place/R.+Saldanha+Marinho,+450+-+904+-+Centro,+Campos+dos+Goitacazes+-+RJ,+28010-802/@-21.7622489,-41.3274578,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd44a0ff25591:0x77aaf5df9c160f86!8m2!3d-21.7622489!4d-41.3252691' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">PRISCILA CAETANO DOS SANTOS XAVIER</h3>
+                  <span class="especialidade"><i>Clínica Geral</i></span>
+                </div> 
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Atanagildo de Freitas, 69 - Parque Bandeirantes - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 99936-7681 / (22) 99851-3312</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/R.+Atanagildo+de+Freitas,+69+-+Parque+Bandeirantes,+Campos+dos+Goitacazes+-+RJ/@-21.7197047,-41.3118061,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd53a913d0623:0xaf518c2dbeec429d!8m2!3d-21.7197097!4d-41.3096174' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dentistas bg-light">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">RAFAEL PETRUCCI CORDEIRO</h3>
+                  <span class="especialidade"><i>Clínica Geral, Periodontia, Ortodontia e Ortopedia Funcional dos Maxilares</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Saldanha Marinho, 416 - Sala 208 Vip's Center Shopping - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27226327</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Uniodonto/@-21.7623946,-41.3264143,17z/data=!4m8!1m2!2m1!1sRua+Saldanha+Marinho,+416+-+Sala+201+Vips+Center+Shopping+-+CENTRO+-+Campos+dos+Goytacazes!3m4!1s0xbdd44a6f005449:0x9f223839ae975a8c!8m2!3d-21.762328!4d-41.3242819' target='_blank'
+                    data-toggle="tooltip" data-placement="top" title="Encontre no Mapa" target='_blank'>
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="dentistas">
+              <div class="col-md-2 perfil">
+                <img src="Images/Dentistas/0.jpg" />
+              </div>
+              
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h3 class="doctor-name">TATIANA BATISTA PECLY</h3>
+                  <span class="especialidade"><i>Endodontia, Ortodontia e Ortopedia Funcional dos Maxilares</i></span>
+                </div>
+                <div class="informacoes">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <span class="address">Rua Saldanha Marinho, 416 - Sala 213 Vip's Center Shopping - CENTRO - Campos dos Goytacazes</span>
+                  <br />
+                  <br />
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <span><b>(22) 27267559</b></span>
+                  
+                  
+                  <div class="Mapa col-md-6">
+                    <a href='https://www.google.com.br/maps/place/Uniodonto/@-21.7623946,-41.3264143,17z/data=!4m8!1m2!2m1!1sRua+Saldanha+Marinho,+416+-+Sala+201+Vips+Center+Shopping+-+CENTRO+-+Campos+dos+Goytacazes!3m4!1s0xbdd44a6f005449:0x9f223839ae975a8c!8m2!3d-21.762328!4d-41.3242819' 
+                    target='_blank' data-toggle="tooltip" data-placement="top" title="Encontre no Mapa">
+                    <img src='Images/marcador.png' /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer class="footer">
+     
+      <div class="container">
+        <div class="footer_superior">
+          <div class="col-md-4">
+            <img src="Images/ans.png" style="float:left; padding-top:15px;">
+          </div>
+          <div class="col-md-4">
+            <span align="center" style="padding-left:80px;"><b>Disque ANS: 0800 701 9656</b></span> 
+          </div>
+          <div class="col-md-4">
+            <span style="float:right;" class="ans_site"><b>www.ans.gov.br</b></span>
+          </div>
+        </div>
+        
+        
+        <div class="footer_anterior">
+          <div class="col-md-3 DesenvolvidoPor">
+            <a href="http://f2wsolucoes.com.br/" target="_blank"
+            title="F2W Soluções - Softwares, Sites, Comunicação Visual e Social Media">
+              
+                <span>Desenvolvido Por</span>
+                <img src="Images/f2w.png">
+              
+            </a>
+          </div>
+          
+          <div class="col-md-7">
+            <span class="Copyright" style="color:#FFF;"><b>©COPYRIGHT 2014 - UNIODONTO CAMPOS
+            - TODOS OS DIREITOS RESERVADOS</b></span>
+          </div>
+          
+          <div class="col-md-2">
+             <a href="https://www.facebook.com/pages/Uniodonto-Campos/130851010419929"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Facebok" style="float:right;margin-top:15px;">
+             <span class="glyphicon glyphicon-user"></span>
+            </button></a>
+          </div>
+        </div>
+        
+        
+      </div>
+    </footer>
+    
+    
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="popover"]').popover()
+  })
+  </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="JS/encontre.js"></script>
+  </body>
+</html>

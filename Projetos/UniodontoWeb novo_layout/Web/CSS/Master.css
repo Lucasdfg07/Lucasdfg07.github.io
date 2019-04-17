@@ -1,0 +1,425 @@
+#loading {
+   position: fixed;
+   top:-25%;
+   margin-left:40%;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+ }
+ #loading img {
+   border-radius:100%;
+ }
+body {
+  overflow-x:hidden;
+}
+/* Navbar */
+header {
+  height:100px;
+  padding-top:33px;
+}
+header span {
+  font-size:1.2em;
+  font-family:cursive;
+  padding-left:22%;
+  font-weight:300;
+}
+nav {
+  margin-top:100px;
+}
+.nav-item a {
+  color:rgba(165,10,80,1.0);
+}
+.nav-item {
+  padding-left:6%;
+}
+.navbar-toggle, .icon-bar {
+  border:2px solid black;
+}
+header > .col-md-4  > img {
+  width:100%;
+}
+header .col-md-4 {
+  width:20%;
+  height:70px;
+  margin-top:-40px;
+  padding-top:20px;
+  background-color: rgba(165,10,80,1.0);
+  border-radius:10px;
+  margin-left:9%;
+}
+header .logo {
+  opacity: 0;
+}
+header .telefone {
+  opacity: 0;
+}
+header .restrito {
+  height:100px;
+  width:30%;
+  opacity: 0;
+}
+header .restrito img {
+  width:100%;
+  padding-left:4%;
+  margin-top:-15px;
+}
+header .restrito > .col-md-4 {
+  padding-left:5%;
+  width:27%;
+  margin-left:5%;
+  margin-top:-5px;
+  height:20px;
+}
+header .restrito > .col-md-4 img {
+  width:100%;
+}
+
+
+/*Botão Busca */
+#fBusca1, #fBusca2 {
+  float:right;
+  border-radius:100%;
+  height:25px;
+  width:25px;
+  border:none;
+}
+#fBusca2 {
+  margin-top:45px;
+  margin-bottom:20px;
+}
+
+/* Rodapé */
+.footer {
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+  text-decoration:none;
+  margin-top:60px;
+}
+.footer > .container {
+  border-top:1.5px dashed rgba(165,10,80,1.0);
+}
+.DesenvolvidoPor {
+  width:180px;
+  height:50px;
+}
+.DesenvolvidoPor a {
+  text-decoration:none;
+  font-size:1.1em;
+  color: black;
+  font-weight:800;
+  font-family:courier;
+}
+.footer_anterior {
+  margin-top:100px;
+}
+.fundo_imagem {
+  border-radius:100%;
+  margin-left:25%;
+}
+.fundo_imagem img {
+  margin-top:-10px;
+  height:100%;
+  width:100%;
+  border-radius:100%;
+}
+.footer_anterior > .col-md-7 {
+  padding-left:10%;
+}
+
+/* Media Querys para Alterar resolução */
+@media screen and (max-width: 767px) {
+  header .logo {
+    width:250px;
+    height:80px;
+  }
+  header li {
+    position:block;
+  }
+  .telefone {
+    display:none;
+  }
+  .restrito {
+    display:none;
+  }
+  .navbar-toggle {
+    margin-top:-90px;
+  }
+  .footer_superior b {
+    font-size:0.7em;
+  }
+  .footer_anterior b {
+    font-size:0.67em;
+  }
+  .DesenvolvidoPor span {
+    font-size:0.6em;
+  }
+  .form2 {
+    padding-top:20px;
+  width:80%;
+  }
+  #fBusca2 {
+    margin-right:-40px;
+    margin-top:-25px;
+  }
+  .dicas_de_saude {
+    margin-left:70px;
+  }
+  .img_inferior {
+    margin-left:10px;
+  font-size:0.9em;
+  width:85%;
+  }
+  .img_dicas_de_saude {
+    margin-top:100px;
+  }
+  .img_dicas_de_saude img {
+    width:90%;
+  }
+ .planos_div {
+  margin-bottom:20px;
+  margin-left:-110px;
+  }
+  .planos_navbar {
+    width:90%;
+  }
+.planos_div img {
+  width:80%;
+  margin-left:30px;
+  }
+  .Saiba_mais_div {
+    margin-left:-60px;
+  width:100%;
+  }
+  .Saiba_mais {
+    font-size:0.57em;
+  border-radius:5px;
+  }
+  .Saiba_mais img {
+    margin-top:-3px;
+  }
+.img_224x45 {
+  -webkit-width:40%;
+  width:40%;
+  }
+  .img-logo img {
+  padding-top:10px;
+   -webkit-height:40%;
+  height:40%;
+  }
+  .ans_site {
+    margin-top:10px;
+    margin-right:50%;
+  }
+  .fundo_imagem {
+    margin-left:95%;
+  }
+  .col-md-2 > .btn-default {
+    margin-right:56%;
+  }
+    #loading {
+   position: fixed;
+   margin-left: -18%;
+   width: 60%;
+   height: 60%;
+   z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .telefone {
+    display:none;
+  }
+  .restrito {
+    display:none;
+  }
+  .footer_superior b {
+    font-size:0.8em;
+  }
+  .footer_anterior b {
+    font-size:0.77em;
+  }
+  .DesenvolvidoPor span {
+    font-size:0.7em;
+  }
+  .img_dicas_de_saude {
+    margin-top:100px;
+  }
+  .img_224x45 {
+  width:20%;
+  -webkit-width:20%;
+  }
+  .img-logo img {
+  padding-top:10px;
+  height:20%;
+  -webkit-height:20%;
+  }
+  #loading {
+   position: fixed;
+   margin-right: 20%;
+   margin-top: 27%;
+   width: 60%;
+   height: 60%;
+   z-index: 9999;
+ }
+}
+
+@media screen and (min-width: 992px) {
+  .telefone {
+    display:none;
+  }
+  .restrito {
+    display:none;
+  }
+  .footer_superior b {
+    font-size:0.9em;
+  }
+  .footer_anterior b {
+    font-size:0.87em;
+  }
+  .planos_div img {
+    height:220px;
+    width:222px;
+  }
+  .img_dicas_de_saude img {
+    height:165px;
+    width:161px;
+  }
+.img_224x45 {
+  -webkit-width:50%;
+  width:50%;
+  }
+  .img-logo img {
+  padding-top:10px;
+  -webkit-height:50%;
+  height:50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .telefone {
+    display:block;
+  }
+  .restrito {
+    display:block;
+  }
+  .planos_div img {
+    height:300px;
+    width:292px;
+  }
+  .img_dicas_de_saude img {
+    height:215px;
+    width:211px;
+  }
+  .img_224x45 {
+  -webkit-width:70%;
+  width:70%;
+  }
+  .img-logo img {
+  padding-top:10px;
+  -webkit-height:70%;
+  height:70%;
+  }
+}
+
+/* Divisão Carousel */
+#myCarousel {
+  margin-top:100px;
+  position:relative;
+  width:95%;
+  margin-left:30px;
+}
+/* Encontre seu dentista divisão */
+.encontre_seu_dentista {
+  margin-top:50px;
+}
+/* Dicas de Saúde divisão */
+.dicas_de_saude {
+  background-color:#EEE0E5;
+  width:57.5%;
+  margin-top:50px;
+  padding:15px 10px;
+}
+.dicas_de_saude span {
+  font-size:1.2em;
+  color: #aa375a;
+}
+.img_dicas_de_saude img {
+  position:relative;
+  margin-top:-50px;
+  margin-left:-10px;
+}
+.dicas_de_saude_texto h5 {
+  color: #555555;
+  font-weight:bold;
+}
+.dicas_de_saude_texto p {
+  font-size:0.85em;
+}
+.continue_lendo {
+  float:right;
+  padding:10px 0px;
+  color: #aa375a;
+  font-weight:bold;
+}
+.continue_lendo:hover {
+  text-decoration:none;
+  color: #aa375a;
+}
+
+/* Planos Divisão */
+.planos_navbar {
+  background-color: #EEE0E5;
+  margin-left:15px;
+  height:40px;
+  padding:3px 5px;
+}
+.planos_h4 {
+  background-color:#CDC1C5;
+  width:100px;
+  height:40px;
+  padding:10px 5px;
+  margin-top:-3px;
+  margin-left:-4px;
+}
+.planos {
+  margin-left:90px;
+  margin-top:50px;
+  width:83%;
+}
+/* Saiba Mais divisão */
+.Saiba_mais_div {
+  width:450px;
+}
+.Saiba_mais {
+  background-color:#af3c5f;
+  height:40px;
+  padding:7px;
+}
+.Saiba_mais span {
+  color:#FFF;
+  font-size:1.2em;
+}
+.Saiba_mais img {
+  float:right;
+}
+.Saiba_mais_texto p {
+  font-size:0.95em;
+  padding-top:15px;
+}
+.Saiba_mais_texto {
+  margin-top:10px;
+  font-family:arial;
+  font-size:0.9em;
+}
+/* Imagens inferiores divisão */
+.img_inferior img{
+  margin-top:50px;
+}
+.TituloOuvidoria {
+  background-color: #f7f7f7;
+  height:50px;
+}
+.TituloOuvidoria span {
+  color: #a22f51;
+}

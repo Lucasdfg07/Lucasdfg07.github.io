@@ -1,0 +1,163 @@
+<div class="container">
+  <h1>Bem vindo(a) à tela de cadastro de Estágios!</h1>
+  <p></p>
+
+
+  <p class="navbar-text pull-right">
+  <% if user_signed_in? %>
+    <div class="conteudo">
+      <span>Usuário: <strong><%= current_user.nome %></strong></span>
+      <%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'btn btn-warning editar_perfil' %> <br />
+
+      <hr />
+
+      <% if current_user.role == "Administrador" %>
+
+        <%= form_with model: @user do |form| %>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Matricula</th>
+              <th scope="col">Curso</th>
+              <th scope="col">Email</th>
+              <th scope="col">Situação</th>
+              <th scope="col">Role</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td><%= user.nome %></td>
+                <td><%= user.matricula %></td>
+                <td><%= user.licenciatura %></td>
+                <td><%= user.email %></td>
+
+                <% if user.situacao == "Revisar" %>
+                  <td style="color:blue;font-weight:bold;"><%= user.situacao %></td>
+                <% else %>
+                  <% if user.situacao == "Reprovado" %>
+                    <td style="color:red;font-weight:bold;"><%= user.situacao %></td>
+                  <% else %>
+                    <td style="color:green;font-weight:bold;"><%= user.situacao %></td>
+                  <% end %>
+                <% end %>
+
+                <td><%= user.role %></td>
+                <td><%= link_to "Revisar", welcome_edit_path(:id => user.id, :nome => user.nome), :class => 'btn btn-info revisar_btn' %></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+        <% end %>
+
+      <% else %>
+        <% if current_user.situacao == "Revisar" %>
+          <p>Sua solicitação foi encaminhada para aprovação.</p>
+          <p>Seu pedido será avaliado e notificado por e-mail em qualquer mudança no status do pedido!</p>
+
+          <%= image_tag("loader.gif", :alt => "gif aguarde") %>
+        <% end %>
+
+        <% if current_user.situacao == "Reprovado" %>
+          <h5>Parece que a administração está com dificuldades na validação do seu perfil!</h5>
+
+          <br />
+
+          <p>Mas não se preocupe.</p>
+          <p>Contate um administrador para normalizar seu cadastro e prosseguir com o registro do estágio.</p>
+
+          <div class="col-md-12 imagem_reprovado">
+            <%= image_tag("reprovado.jpg", :alt => "ícone estudantes") %>
+          </div>
+
+          <div class='contato_dirlic border mt-4 pt-3'>
+            <p><b>CONTATO: IFFluminense <i>campus</i> Campos Centro/DIRLIC/NAPP: <u>(22) 2726-2897 // (22) 2726-2923</u></b></p>
+          </div>
+        <% end %>
+
+        <% if current_user.situacao == "Aprovado"%>
+          <h5>Parabéns, seu perfil foi aprovado com sucesso!</h5>
+          <h6>Agora você já pode prosseguir com o cadastro para o estágio.</h6>
+
+          <hr />
+
+          <% if current_user.pdf_centro == '0' && current_user.pdf_guarus == '0' && current_user.pdf_outros == '0'  %>
+            <p>Escolha um formulário, mas lembre-se que só é possível fazer o preenchimento uma única vez.</p>
+
+            <div class="botoes">
+              <div class="col btn1">
+                <%= button_tag 'Instituição de Ensino Federal', :class => 'btn btn-primary btn_federal' %>
+              </div>
+
+              <div class="col btn2">
+                <%= link_to "Instituição de Ensino Estadual, Municipal ou Particular", relatoutros_index_path, :class => 'btn btn-secondary' %>
+              </div>
+
+              <% if current_user.licenciatura == 'Educação Física' && current_user.periodo == '5º' %>
+                <div class="col btn3">
+                  <%= link_to "Instituição de Ensino não formal", welcome_edit_path, :class => 'btn btn-dark' %>
+                </div>
+
+                <style type='text/css'>
+                  .div_federal {
+                    margin-left:50px!important;
+                  }
+                </style>
+              <% end %>
+
+              <div class="div_federal" style="display:none">
+                <%= link_to "Campus Campos Centro", relatorio_centro_index_path, :class => 'btn btn-success centro' %>
+                <%= link_to "Campus Campos Guarus", relatorio_guarus_index_path, :class => 'btn btn-success guarus' %>
+              </div>
+            </div>
+          <% end %>
+
+          <% if current_user.pdf_centro != '0' || current_user.pdf_guarus != '0' || current_user.pdf_outros != '0'  %>
+            <div class="pdf_btn">
+              <span>Clique aqui e imprima o formulário!</span><br />
+              <% if current_user.pdf_centro != '0' %>
+                <%= link_to 'Gerar PDF', relatorio_centro_index_path(@relatorio, current_user, :format => :pdf), :class => 'btn btn-dark' %>
+              <% end %>
+
+              <% if current_user.pdf_guarus != '0' %>
+                <%= link_to 'Gerar PDF', relatorio_guarus_index_path(@relatorio, current_user, :format => :pdf), :class => 'btn btn-dark' %>
+              <% end %>
+
+              <% if current_user.pdf_outros != '0' %>
+                <%= link_to 'Gerar PDF', relatoutros_index_path(@relatorio, current_user, :format => :pdf), :class => 'btn btn-dark' %>
+              <% end %>
+            </div>
+          <% end %>
+
+        <% end %>
+      <% end %>
+      </div>
+
+      <br />
+      <%= link_to "Sair", destroy_user_session_path, :method => :delete, :class => 'btn btn-danger'  %>
+
+    <% else %>
+
+    <%= link_to "Logar", new_user_session_path, :class => 'btn btn-primary'  %> <br />
+    <%= link_to "Registrar-se", new_user_registration_path, :class => 'btn btn-success registrar-se'  %>
+    <% end %>
+  </div>
+
+  <style type="text/css">
+    .revisar_btn {
+      margin-top:-5px;
+    }
+    .div_federal a{
+      display:block;
+    }
+    .div_federal {
+      width:270px;
+      margin-left: 200px;
+    }
+    .pdf_btn {
+      text-align:center;
+      margin-top:20px;
+    }
+  </style>

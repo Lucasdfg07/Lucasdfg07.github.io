@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Uniodonto Campos</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/Master.css" rel="stylesheet">
+    <link href="CSS/Planos.css" rel="stylesheet">
+    <link href="CSS/animation.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="JS/load.js"></script>
+
+
+  <script>
+        function Cobertura(obj, a) {
+            if (a) {
+                $(window).scrollTop(0);
+                $('.Cobertura').fadeIn(500);
+            }
+            else {
+                $('.Cobertura').fadeOut(500);
+            }
+        }
+    </script>
+  </head>
+
+  <body class="body">
+
+  <div id="loading" style="display: block">
+    <img src="https://media.giphy.com/media/VlJkP9Vxi4nkI/giphy.gif" style="width:200px;height:200px;" />
+  </div>
+
+
+  <div style="display:none" id="conteudo">
+    <header>
+      <div class="col-md-4 logo">
+          <img src="Images/logo.png" />
+      </div>
+
+      <div class="col-md-4 telefone">
+          <img src="Images/telefones.png" />
+      </div>
+
+      <div class="col-md-4 restrito">
+          <img src="Images/restrito_top.png" />
+
+
+            <div class="col-md-4">
+              <a href="">
+                <img src="Images/restrito_cooperado.png" style="width:110%;"/>
+              </a>
+            </div>
+
+
+          <a href="">
+            <div class="col-md-4">
+              <a href="">
+                <img src="Images/restrito_beneficiario.png" style="width:120%;" />
+              </a>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="col-md-4">
+              <a href="">
+                <img src="Images/restrito_empresa.png" />
+              </a>
+            </div>
+          </a>
+      </div>
+    </header>
+
+
+    <!-- Botão da Navbar. (aparece em resolução < 768px) -->
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed"
+     data-toggle="collapse" data-target="#barra-navegacao">
+       <span class="sr-only">Alternar navegação</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+   </div>
+
+   <div class="collapse navbar-collapse" id="barra-navegacao">
+     <ul class="nav nav-tabs">
+       <li class="nav-item">
+         <a class="nav-link active" href="index.html">Home</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="Institucional.html">Institucional</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="Planos.html">Planos</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="EncontreSeuDentista.html">Encontre seu dentista</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="FaleConosco.html">Fale Conosco</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="DicasDeSaude.html">Dicas de Saúde</a>
+       </li>
+     </ul>
+   </div>
+
+    <div class="container">
+      <div class="imagens_superior">
+        <div class="col-md-4">
+          <a href="Planos_Individual.html"><img src="Images/individual.jpg" /></a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="Planos_familiar.html"><img src="Images/familiar.jpg" /></a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="Planos_empresarial.html"><img src="Images/empresarial1.jpg" /></a>
+        </div>
+      </div>
+
+
+    <div class="primeira_linha">
+     <div class="col-md-4 orcamento_div">
+    <a href="OrcamentoContrato.html"><div class="orcamento">
+      <div class="span_orcamento">
+      <span>Solicite seu</span>
+      <br />
+      <span style="padding-left:20px;">Contrato</span>
+      </div>
+    </div></a>
+   </div>
+
+    <div class="col-md-4 cobertura_img" style="margin-top:20px;padding-bottom:100px;">
+          <img src="Images/cobertura.jpg" style="cursor: pointer;" onclick="Cobertura(this,true);" />
+    </div>
+
+
+      <div class="segunda_linha col-md-4">
+            <a href="Brasil.html" target="_blank">
+              <img src="Images/abrangencia.png" />
+            </a>
+      </div>
+  </div>
+
+  <div class="segunda_linha">
+    <div class="col-md-4">
+    </div>
+
+    <div class="col-md-4 bannerplanos" style="margin-top:100px;">
+      <img src="Images/bannerplanos.jpg" style="cursor: pointer;" onclick="location='FaleConosco.html';" />
+    </div>
+
+   <div class="col-md-4">
+   </div>
+  </div>
+
+  <style>
+    .bannerplanos img {
+        height:100%;
+        width:100%;
+    margin-top:-100px;
+      }
+    .bannerplanos {
+      margin-left:15%;
+      width:60%;
+      }
+  .orcamento {
+    margin-top:10px;
+    height:300px;
+    width:300px;
+    border-radius:100%;
+    background-color:rgba(155,10,60,0.9);
+  }
+  .span_orcamento {
+    padding-top:110px;
+    padding-left:75px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight:900;
+    font-size:2em;
+    color:white;
+  }
+  .orcamento:hover {
+    box-shadow:5px 5px 40px rgba(175,10,20,0.9);
+  }
+  .orcamento_div a {
+    text-decoration:none;
+  }
+    /* Media Queries para Alterar resolução */
+@media screen and (max-width: 767px) {
+  .bannerplanos img {
+      margin-top:50px;
+      margin-left:-70px;
+      width:200%;
+      }
+    .orcamento {
+      margin-bottom:100px;
+      margin-left:-10px;
+      }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  }
+  </style>
+
+      <div class="Cobertura">
+        <div class="bg">
+        </div>
+
+        <div class="faleconosco-form">
+          <img src="Images/faleconosco-top.jpg" onclick="Cobertura(this);" />
+          <div>
+            <p>
+              COBERTURAS E PROCEDIMENTOS GARANTIDOS
+            </p>
+            <p>
+              3.1. A cobertura deste plano se refere aos serviços exclusivamente odontológicos
+              conforme rol editado pela Agência Nacional de Saúde Suplementar, e suas atualizações.
+            </p>
+            <p>
+              URGÊNCIA/EMERGÊNCIA
+            </p>
+            <p>
+              <li>Colagem de Fragmentos Dentários
+              <li>Controle de Hemorragia com ou sem Aplicação de Agente Hemostático
+              <li>Incisão e Drenagem (Intra ou Extra-Oral) de Abscesso, Hematoma ou Flegmão da Região
+              Buco-Maxilo-Facial
+              <li>Imobilização Dentária
+              <li>Recimentação de Peça/Trabalho Protético
+              <li>Redução de Luxação da Atm
+              <li>Reimplante de Dente Avulsionado com Contenção
+              <li>Sutura de Ferida Buco-Maxilo-Facial
+              <li>Tratamento de Abscesso Periodontal
+              <li>Tratamento de Alveolite
+              <li>Tratamento de Odontalgia Aguda
+            </p>
+            <p>
+              DIAGNÓSTICO
+            </p>
+            <p>
+              <li>Consulta Odontológica Inicial
+            </p>
+            <p>
+              CONDICIONAMENTO
+            </p>
+            <p>
+              <li>Condicionamento em Odontologia
+            </p>
+            <p>
+              EXAMES
+            </p>
+            <p>
+              <li>Procedimento Diagnóstico Anatomopatológico (em Peça Cirúrgica, Material de Punção/Biópsia
+              e Citologia Esfoliativa da Região Bucomaxilo-Facial)
+              <li>Teste de Fluxo Salivar
+            </p>
+            <p>
+              RADIOLOGIA
+            </p>
+            <p>
+              <li>Radiografia Interproximal (Bite-Wing)
+              <li>Radiografia Oclusal
+              <li>Radiografia Panorâmica de Mandíbula/Maxila (Ortopantomografia)
+              <li>Radiografia Periapical
+            </p>
+            <p>
+              PREVENÇÃO EM SAÚDE BUCAL
+            </p>
+            <p>
+              <li>Aplicação de Selante
+              <li>Aplicação Tópica de Flúor
+              <li>Atividade Educativa em Saúde Bucal
+              <li>Controle de Biofilme Dental (Placa Bacteriana)
+              <li>Dessensibilização Dentária
+              <li>Profilaxia - Polimento Coronário
+              <li>Remineralização Dentária
+            </p>
+            <p>
+              DENTÍSTICA
+            </p>
+            <p>
+              <li>Adequação do Meio Bucal
+              <li>Ajuste Oclusal
+              <li>Aplicação de Cariostático
+              <li>Faceta Direta em Resina Fotopolimerizável
+              <li>Núcleo de Preenchimento
+              <li>Remoção de Fatores de Retenção de Biofilme Dental (Placa Bacteriana)
+              <li>Restauração em Amálgama
+              <li>Restauração em Ionômero de Vidro Restauração em
+              <li>Resina Fotopolimerizável
+              <li>Restauração Temporária /Tratamento Expectante
+              <li>Tratamento Restaurador Atraumático
+            </p>
+            <p>
+              PERIODONTIA
+            </p>
+            <p>
+              <li>Aumento de Coroa Clínica
+              <li>Cirurgia Periodontal a Retalho
+              <li>Cunha Proximal
+              <li>Gengivectomia/Gengivoplastia
+              <li>Raspagem Sub-Gengival e Alisamento Radicular/Curetagem de Bolsa Periodontal
+              <li>Raspagem Supra-Gengival e Polimento Coronário
+            </p>
+            <p>
+              ENDODONTIA
+            </p>
+            <p>
+              <li>Capeamento Pulpar Direto – Excluindo Restauração Final
+              <li>Pulpotomia
+              <li>Remoção de Corpo Estranho Intra-Canal
+              <li>Remoção de Núcleo Intra-Canal
+              <li>Remoção de Peça/Trabalho Protético
+              <li>Tratamento de Perfuração (Radicular/Câmara Pulpar)
+              <li>Tratamento Endodôntico em Dente com Rizogênese Incompleta
+              <li>Tratamento Endodôntico em Dentes Decíduos
+              <li>Tratamento Endodôntico em Dentes Permanentes
+              <li>Retratamento Endodôntico em Dentes Permanentes
+            </p>
+            <p>
+              CIRURGIA
+            </p>
+            <p>
+              <li>Alveoloplastia
+              <li>Amputação Radicular com ou sem Obturação Retrógrada
+              <li>Apicetomia com ou sem Obturação Retrógrada
+              <li>Aprofundamento/Aumento de Vestíbulo
+              <li>Biópsia de Boca
+              <li>Biópsia de Glândula Salivar
+              <li>Biópsia de Lábio
+              <li>Biópsia de Língua
+              <li>Biópsia de Mandíbula/Maxila
+              <li>Bridectomia/Bridotomia
+              <li>Cirurgia para Tórus/Exostose
+              <li>Exérese de Pequenos Cistos de Mandíbula/Maxila
+              <li>Exérese ou Excisão de Mucocele, Rânula ou Cálculo Salivar
+              <li>Exodontia a Retalho
+              <li>Exodontia de Raiz Residual
+              <li>Exodontia Simples de Decíduo
+              <li>Exodontia Simples de Permanente
+              <li>Frenotomia/Frenectomia Labial
+              <li>Frenotomia/Frenectomia Lingual
+              <li>Odonto-Secção
+              <li>Punção Aspirativa com Agulha Fina/Coleta de Raspado em Lesões ou Sítios Específicos
+              da Região Buco-Maxilo-Facial
+              <li>Redução de Fratura Alvéolo Dentária
+              <li>Remoção de Dentes Retidos (Inclusos, Semi-Inclusos ou Impactados)
+              <li>Tratamento Cirúrgico de Fístulas Buco-Nasais ou Buco-Sinusais
+              <li>Tratamento Cirúrgico de Tumores Benignos e Hiperplasias de Tecidos Moles da Região
+              Buco-Maxilo-Facial
+              <li>Tratamento Cirúrgico de Tumores Benignos e Hiperplasias de Tecidos Ósseos/Cartilaginosos
+              na Mandíbula/Maxila
+              <li>Tratamento Cirúrgico de Tumores Benignos Odontogênicos sem Reconstrução Ulectomia/Ulotomia
+            </p>
+            <p>
+              PRÓTESE
+            </p>
+            <p>
+              <li>Coroa Unitária Provisória com ou sem Pino/Provisório para Preparo de RMF
+              <li>Reabilitação com Coroa de Acetato, Aço ou Policarbonato
+              <li>Reabilitação com Coroa Total de Cerômero Unitária - Inclui a Peça Protética
+              <li>Reabilitação com Coroa Total Metálica Unitária - Inclui a Peça Protética
+              <li>Reabilitação com Núcleo Metálico fundido/Núcleo Pré-Fabricado - Inclui a Peça Protética
+              <li>Reabilitação com Restauração Metálica Fundida (RMF) Unitária - Inclui a Peça Protética
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+
+      <div class="container">
+        <div class="footer_superior">
+          <div class="col-md-4">
+            <img src="Images/ans.png" style="float:left; padding-top:15px;">
+          </div>
+          <div class="col-md-4">
+            <span align="center" style="padding-left:80px;"><b>Disque ANS: 0800 701 9656</b></span>
+          </div>
+          <div class="col-md-4">
+            <span style="float:right;" class="ans_site"><b>www.ans.gov.br</b></span>
+          </div>
+        </div>
+
+
+        <div class="footer_anterior">
+          <div class="col-md-3 DesenvolvidoPor">
+            <a href="http://lucas-siqueira.com/" target="_blank"
+            title="Lucas Siqueira - Desenvolvedor Web">
+
+                <div class="fundo_imagem">
+                <img src="Images/Logo_redonda.png"></div>
+
+            </a>
+          </div>
+
+          <div class="col-md-7">
+            <span class="Copyright"><b>©COPYRIGHT 2014 - UNIODONTO CAMPOS
+            - TODOS OS DIREITOS RESERVADOS</b></span>
+          </div>
+
+          <div class="col-md-2">
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Facebok" style="float:right;margin-top:15px;">
+              <a href="https://www.facebook.com/pages/Uniodonto-Campos/130851010419929"><img src="Images/facebook-logo.png" /></a>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </footer>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="popover"]').popover()
+  })
+  </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="JS/mail_planos_pre_venda.js"></script>
+    <script src="JS/mail_planos_solicitacao.js"></script>
+  </body>
+</html>

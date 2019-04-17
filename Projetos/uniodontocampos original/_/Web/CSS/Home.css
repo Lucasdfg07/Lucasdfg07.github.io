@@ -1,0 +1,502 @@
+﻿.Banner
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 365px;
+    overflow: hidden;
+}
+.Banner > ul
+{
+    
+position: relative;
+    
+display: block;
+    
+white-space: nowrap;
+    
+padding: 0;
+    
+margin: 0;
+}
+.Banner > ul > li
+{
+
+position: relative;
+
+display: inline-block;
+
+vertical-align: top;
+
+max-height: 363px;
+
+overflow: hidden;
+}
+.Banner li > img
+{
+    
+width: 100%;
+}
+
+.MeioBanner
+{
+    position: relative;
+    display: block;
+    float: left;
+    width: 395px;
+    height: 265px;
+    margin-top: 50px;
+    margin-left: 45px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.MeioBanner > span > h1
+{
+    font-style: italic;
+    font-weight: bold;
+    color: #555555;
+}
+
+.MeioBanner > span > p
+{
+    position: relative;
+    display: block;
+    width: 285px;
+    height: 75px;
+    font-size: 10pt;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+button
+{
+    position: relative;
+    display: block;
+    width: 217px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    border: solid 1px #aa375a;
+    font-size: 10pt;
+    color: #555555;
+    outline: none;
+}
+
+.MeioBanner > span > p > b
+{
+    color: #9b2649;
+}
+
+.Seta
+{
+       float: right;
+    position:relative;
+    display: block;
+    content: "";
+    border: solid 3px transparent;
+    
+       border-left-color: #aa375a;
+    
+       border-left-width: 9px;
+    
+       border-top-width: 5px;
+    
+    
+       border-bottom-width: 5px;
+       margin-top: 3px;
+}
+
+.EncontreSeuDentista
+{
+    position: relative;
+    display: inline-block;
+    width: 435px;
+    height: 185px;
+    margin-top: 25px;
+}
+
+h2
+{
+    position: relative;
+    display: block;
+    width: 414px;
+    height: 18px;
+    margin: 0px;
+    background-color: #aa375a;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12pt;
+}
+
+h2 > img
+{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.Form
+{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 182px;
+    height: 53px;
+    margin-left: 15px;
+    margin-top: 18px;
+}
+
+.Form > input, .Form > select
+{
+    margin-left: 0px;
+    position: relative;
+    display: block;
+    width: 140px;
+    border: solid 1px #999999;
+    padding: 1px 10px;
+}
+.Form > select
+{
+height: 25px;width: 160PX;}
+.Form > label
+{
+    font-weight: bold;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+.Form[id="1"]
+{
+    width: 380px;
+}
+
+.Form[id="1"] > input
+{
+    width: 340px;
+}
+
+.EncontreSeuDentista  a
+{
+    position: absolute;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    background-color: #aa375a;
+    border: none;
+    right: -36px;
+    text-align: center;
+    vertical-align: middle;
+}
+.EncontreSeuDentista  a:before
+{
+    content: "";
+    
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+.EncontreSeuDentista  a > img
+{
+    vertical-align: middle;
+    
+}
+
+.DicasDeSaude
+{
+    position: relative;
+    display: inline-block;
+    width: 595px;
+    height: 186px;
+    float: right;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    color: #555555;
+}
+
+.DicasDeSaude > img
+{
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: -30px;
+}
+
+.TextoDicas
+{
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 356px;
+    height: 149px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 9pt;
+}
+
+.Setas
+{
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 50px;
+    height: 10px;
+}
+
+h3
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    font-size: 12pt;
+    text-transform: uppercase;
+    color: #aa375a;
+    margin-bottom: 20px;
+}
+
+.TextoDicas > span > p
+{
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    max-height: 51px;
+    overflow: hidden;
+}
+
+.TextoDicas > div.Setas> b
+{
+    color: #aa375a;
+    position: relative;
+    display: inline-block;
+}
+
+
+.TextoDicas > span > p > b
+{
+    color: #555555;
+}
+
+.TextoDicas > span > a
+{
+    position: relative;
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    color: #aa375a;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.Planos
+{
+    position: relative;
+    display: inline-block;
+    width: 605px;
+    height: 342px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.Planos > img
+{
+}
+
+.TituloPlanos
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 37px;
+    background-color: #ebebeb;
+    margin-bottom: 23px;
+}
+
+.TituloPlanos > span
+{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 24px;
+    background-color: #dddddd;
+    text-align: center;
+    padding-top: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+
+.SaibaMais
+{
+    position: relative;
+    display: inline-block;
+    width: 433px;
+    height: 338px;
+    float: right;
+    margin-top: 30px;
+}
+
+.SaibaMais > span
+{
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    color: #555555;
+    font-size: 10pt;
+    line-height: 15pt;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.SaibaMais > span > p
+{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.SaibaMais > span > a
+{
+    position: relative;
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 8pt;
+    color: #aa375a;
+}
+
+.Marca
+{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 55px 77px 0px 20px;
+}
+
+.Ouvidoria
+{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 305px;
+    height: 110px;
+    margin-top: 25px;
+}
+
+.TituloOuvidoria
+{
+    position: relative;
+    display: block;
+    width: 305px;
+    height: 55px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+h4
+{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: #a22f51;
+    margin: 0px;
+    float: left;
+}
+
+.TituloOuvidoria > img
+{
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: 10px;
+}
+
+.Ouvidoria > span
+{
+    color: #555555;
+    font-size: 10pt;
+}
+
+.Ouvidoria > span > b
+{
+    color: #555555;
+    margin-bottom: -11px;
+    position: relative;
+    display: block;
+}
+
+.Facebook
+{
+    position: relative;
+    display: inline-block;
+    margin: 41px 0 0 15px;
+    color: #555555;
+}
+
+.Facebook > img
+{
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.Facebook > h3
+{
+    width: 385px;
+    text-align: center;
+    font-size: 13pt;
+}
+
+.Facebook > a
+{
+    position: relative;
+    display: inline-block;
+    top: -15px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.Banner .flag
+{
+
+position: absolute;
+
+top: 50px;
+
+left: 50px;
+
+z-index: 2;
+}
+.Banner .flag > a
+{
+
+position: relative;
+
+display: inline-block;
+
+width: 11px;
+
+height: 11px;
+
+border: solid 1px #b4b4b4;
+
+border-radius: 100%;
+
+margin-right: 15px;
+}
+.Banner .flag > a.flag-selected
+{
+    
+border: none;
+    
+background-color: #cf5d62;
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="Head2"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0b05e6ccc1","applicationID":"27717460","transactionName":"YwEAMhRZCkJQUxZbDlpLIzU2Fw1fQkQLRhRXDQ0IB1RLU0RDAVMFUQoWDxVMBR9QQxJK","queueTime":0,"applicationTime":75,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	UNIODONTO DO BRASIL
+</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css" />
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <style type="text/css">
+            body {font-size:11px;}
+            .material-switch > input[type="checkbox"] {
+                display: none;   
+            }
+
+            .material-switch > label {
+                cursor: pointer;
+                height: 0px;
+                position: relative; 
+                width: 40px;  
+            }
+
+            .material-switch > label::before {
+                background: rgb(0, 0, 0);
+                box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                content: '';
+                height: 16px;
+                margin-top: -8px;
+                position:absolute;
+                opacity: 0.3;
+                transition: all 0.4s ease-in-out;
+                width: 40px;
+            }
+            .material-switch > label::after {
+                background:rgb(255, 255, 255);
+                border-radius: 16px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+                content: '';
+                height: 24px;
+                left: -4px;
+                margin-top: -8px;
+                position: absolute;
+                top: -4px;
+                transition: all 0.3s ease-in-out;
+                width: 24px;
+            }
+            .material-switch > input[type="checkbox"]:checked + label::before {
+                background: #8e2344;
+                opacity: 0.5;
+            }
+            .material-switch > input[type="checkbox"]:checked + label::after {
+                background: #8e2344;
+                left: 20px;
+            }
+
+          .form-control {
+            font-size:11px;
+            padding: 3px 6px;
+          }
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+.btn-default {
+  color: #555;
+  background-color: #fff;
+  border-color: #ccc;
+  font-size:12px;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #555;
+  background-color: #fff;
+  border-color: #8c8c8c;
+}
+.btn-default:hover {
+  color: #555;
+  background-color: #fff;
+  border-color: #adadad;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #555;
+  background-color: #fff;
+  border-color: #adadad;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #555;
+  background-color: #fff;
+  border-color: #8c8c8c;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default .badge {
+  color: #fff;
+  background-color: #fff;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #8e2344;
+  border-color: #8e2344;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #8e2344;
+  border-color: #8e2344;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #660033;
+  border-color: #660033;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+.dropdown-menu{font-size:11px;}
+.divLoading
+{
+    height:100%;
+    left:0;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:10000;
+    background:#fff url('http://www2.uniodonto.com.br/Scripts/shadowBox/skin/classic/loading.gif') center no-repeat;
+    opacity: .6;
+    -moz-opacity: .6;
+    filter:alpha(opacity=60);
+    }
+.nst-paginador
+{
+    font-size: 15px;
+    padding: 5px 5px;
+    color: #333;
+    font-weight:bold;
+}
+
+.nst-paginador a
+{
+    color: #8e2344;
+    font-size: 15px;
+}
+
+.nst-paginador a:hover
+{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.list-group-item-rede .table-endereco>tbody>tr>td{
+    border-top:0px;
+    padding: 4px 8px;
+}
+
+      </style>
+  </head>
+  <body>
+    <form method="post" action="http://uniodontocampos.com.br/BuscaDentista.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTM1NjkyODgzDxYGHgtzaXRlRG9taW5pbwUcaHR0cDovL3d3dzIudW5pb2RvbnRvLmNvbS5ich4MYmxuUG9zdENvbWJvaB4LY29kU2luZ3VsYXJkFgICAw9kFgICBQ9kFgJmD2QWDgIBDxYCHgRUZXh0BRVFbmNvbnRyZSBzZXUgZGVudGlzdGFkAgMPEA8WBh4ORGF0YVZhbHVlRmllbGQFBmNvZGlnbx4NRGF0YVRleHRGaWVsZAUJZGVzY3JpY2FvHgtfIURhdGFCb3VuZGdkEBUcCVNlbGVjaW9uZQRBY3JlB0FsYWdvYXMGQW1hcMOhCEFtYXpvbmFzBUJhaGlhBkNlYXLDoRBEaXN0cml0byBGZWRlcmFsD0VzcMOtcml0byBTYW50bwZHb2nDoXMJTWFyYW5ow6NvC01hdG8gR3Jvc3NvEk1hdG8gR3Jvc3NvIGRvIFN1bAxNaW5hcyBHZXJhaXMFUGFyw6EIUGFyYcOtYmEHUGFyYW7DoQpQZXJuYW1idWNvBlBpYXXDrQ5SaW8gZGUgSmFuZWlybxNSaW8gR3JhbmRlIGRvIE5vcnRlEVJpbyBHcmFuZGUgZG8gU3VsCVJvbmTDtG5pYQdSb3JhaW1hDlNhbnRhIENhdGFyaW5hClPDo28gUGF1bG8HU2VyZ2lwZQlUb2NhbnRpbnMVHAEwATEBMgE0ATMBNQE2ATcBOAE5AjEwAjEzAjEyAjExAjE0AjE1AjE4AjE2AjE3AjE5AjIwAjIzAjIyAjIxAjI0AjI2AjI1AjI3FCsDHGdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAWZkAgUPEA8WAh4HRW5hYmxlZGhkZBYAZAIHDxAPFgIfB2hkZBYAZAIJDxAPFgYfBAUGY29kaWdvHwUFCWRlc2NyaWNhbx8GZ2QQFRMsQ2lydXJnaWEgZSBUcmF1bWF0b2xvZ2lhIEJ1Y28tTWF4aWxvLUZhY2lhaXMLRGVudMOtc3RpY2EvRGlzZnVuw6fDo28gVMOqbXBvcm8tTWFuZGlidWxhciBlIERvci1Pcm9mYWNpYWwKRW5kb2RvbnRpYQ1Fc3RvbWF0b2xvZ2lhDkltcGxhbnRvZG9udGlhD09kb250b2dlcmlhdHJpYRdPZG9udG9sb2dpYSBkbyBUcmFiYWxobxFPZG9udG9sb2dpYSBMZWdhbDVPZG9udG9sb2dpYSBwYXJhIFBhY2llbnRlcyBjb20gTmVjZXNzaWRhZGVzIEVzcGVjaWFpcw9PZG9udG9wZWRpYXRyaWEKT3J0b2RvbnRpYSFPcnRvcGVkaWEgRnVuY2lvbmFsIGRvcyBNYXhpbGFyZXMPUGF0b2xvZ2lhIEJ1Y2FsC1BlcmlvZG9udGlhG1Byw7N0ZXNlIEJ1Y28tTWF4aWxvLUZhY2lhbBJQcsOzdGVzZSBEZW50w6FyaWEnUmFkaW9sb2dpYSBPZG9udG9sw7NnaWNhIGUgSW1hZ2lub2xvZ2lhD1Nhw7pkZSBDb2xldGl2YRUTATEBMgEzATQBNQE3AjExATkBOAIxMAIxMgIxMwIxNAIxNQIxNgIxNwIxOAE2AjE5FCsDE2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAILDxAPFgYfBAUGY29kaWdvHwUFCWRlc2NyaWNhbx8GZ2QQFQAVABQrAwBkZAIhDw8WAh4HVmlzaWJsZWhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBAUQbHRiRXNwZWNpYWxpZGFkZQUIbHRiUGxhbm8FDWNoa0VtZXJnZW5jaWEFDGNoa18yNF9ob3Jhcwyu6t8bP64EILcPhEUrrYU//BZNgqqRKniel/2NbUo/" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="http://www2.uniodonto.com.br/WebResource.axd?d=tXEg4AZlO5uDOmRfJCVIyO_-0NMqpjkcgmMndcRvdxopsXM811pTksRHh_oKhds39p2__N8aadddwH0u_NO6cWAutvU8EyuyaIUVAGL-J5Y1&amp;t=636354798046607314" type="text/javascript"></script>
+
+
+<script src="http://www2.uniodonto.com.br/Scripts/geral.js" type="text/javascript"></script>
+<script src="http://www2.uniodonto.com.br/Scripts/shadowBox/adapter/shadowbox-base.js" type="text/javascript"></script>
+<script src="http://www2.uniodonto.com.br/Scripts/shadowBox/shadowbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Shadowbox.loadSkin('classic','../Scripts/shadowBox/skin');
+Shadowbox.loadLanguage('pt-BR','../Scripts/shadowBox/lang');
+Shadowbox.loadPlayer(['html','iframe'],'../Scripts/shadowBox/player');
+window.onload = function(){
+var options = {
+animate: false,
+animateFade: false,
+modal: true
+}
+Shadowbox.init(options) ;
+}
+//]]>
+</script>
+
+<script src="http://www2.uniodonto.com.br/ScriptResource.axd?d=KJfKybMzO3OuLXAfHCk5I8OfaqkRDUuqokRfz71p6iCwWO3IGLV5Luk4Rvr2s5YscdJRPs5umgv-DlGayDrRnSGECWi7mEatGzNvQ6dp4PXaHWNqkFxkzWCeow73MpusXd0UvFIjh8QR1tj4JCEsUqKJDCCeENiA0LtpMtncUdL5oE6AGVmg2aieSLyesR4f0&amp;t=3d6efc1f" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="http://www2.uniodonto.com.br/ScriptResource.axd?d=-an63XTQJPxh3kMVj9ViYFC7YFak751TxoqtdYRjXcjWs5H3u9f_jlYvJk61hrpEVhNFb1Dt5tVKR5ke4Na2ZLN6URGE_dKKfn5GFUAZcSAwgcKheSVxOxXV7maDzpbfFDMjXglJJdFkLMqHSh_gCv6XpQrGwWA_m3WqYx1MsKSNLJp457MT2av1nOLIxjmg0&amp;t=3d6efc1f" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6B9C8298" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdADxhJGwoEgwT4LVTbEU1uX83JwUbTdszQvgE/ILQG73m8u4E8pgeRbZnxiDYd1sczdbIW4UM77LVx3zq/EfdzgX7YKFbuJ/n+9FGwlraCP15DXB2PqOYkzJIoWOIyWHtbMnw3r+8mA8UOQqB1hH0i2t1VNHDwGHKDpjChLHS5U1iBkcYAbf/YcISdo6LzoYnexNxaDpcsCLiif+t3m2gUZlRth7cnx1x1WUxOwYRkcZ9OSEedOwPwfkn9Bo3kqFtRVevjBdD2b6PzDHqpVrJyZ19F9JIXNoSvqSNem7jY3FLSIscgNmPZ1L2HRjkwJH37kQNZCsFx+JJ3e4FHqoEKN2HV803A1nNf5AAC/mssAFDszNw47N2pP/slS3z9TX7R5/Jr8/ahU2Og1uIWmRNfiwFnIr680SCRiipu1J4gLzCVVVzmkK93Vn5oRQeFDrrz03fn7RgJCjYBVSt/1L1gIH9wgRkHu2T18eikfCjoQsw3DdRdZygcqytekj+CsD2PIU8QMG8UbA83XtV77SXjlRY07YBSVMEdA1SYRYVziiN5aWJIDoQEJQ1JTBqLKz7xpo2RV5g1UPlG+Zt4eVzRPt11zzrvrBr7okXhQQmx+lilKivfyK3xtYDK/YXDSQpECMd7ryA0zdqEVZOdr5gXo+g9uBrR5KgA4XuIVXfdYScv1OeG4FIM6Nr+RNNsdidKKUjMxrHqhpL3QWtW4PSVeeFKg8NTeD2pr9H5b2R/i1+yh4h5Ez+9ItMdex2RkEyzXvDv8T0fK9bgdcjlfEJGBgCwTp803xcJM20/c+eyETvIQ9009vaZi7p16A+BzLB4C5QTjjIihAy77zsUur312JZXwMvpo8ZlvwJCJCCmuQ6CWC+AVCaRVupT99dErcJMd15uRCPyd2W1h1tI2pU97AvYnsIitvAs/DadbG/jKutMXt/wu87201IdH7LRrJvaHmuvhz3qroHsP8KdQJkLs/I4JSj0kbU27R/4PdItCIORo1KwLo5oEjdORbgNhc8UCmV8RDU7Zpre5iQL0KzcRcCYulDlArktZRJIS9eDNzNwsguJ3hfoRhz8NMaPXiklsDZPOGNNQboeNhsG9vdQ63rzqaYl9UAZa6Qbv/Pds6VT3uDq9nEgxOpvP+BcYM04lBtbRyg495LxAjgGazcuwUFK74Mzmfm78rNj4Zhn1t6bAYG/vhCu6xgHslGXJaRI/UWPZYnhBvOqXq+FhnJU44blCFadKo3afqHFRjCTkn3RtPjr1E+vHGJJAr0tn8NSJWQ2Rqz2csEvygJEqrKlZEqvkfrA/xEZHp7FvrYX6mSvA==" />
+</div>
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tupd','upd'], [], [], 90, '');
+//]]>
+</script>
+
+
+    <div id="upp" style="display:none;">
+	
+            <div class="divLoading"></div>
+        
+</div>
+
+    <div class="container">
+
+    <div id="upd">
+	
+
+        <div class="page-header">
+            <h1>Encontre seu dentista</h1>
+        </div>
+          
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label for="ddlEstado">Estado</label>
+                    <select name="ddlEstado" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlEstado\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlEstado" class="form-control">
+		<option selected="selected" value="0">Selecione</option>
+		<option value="1">Acre</option>
+		<option value="2">Alagoas</option>
+		<option value="4">Amap&#225;</option>
+		<option value="3">Amazonas</option>
+		<option value="5">Bahia</option>
+		<option value="6">Cear&#225;</option>
+		<option value="7">Distrito Federal</option>
+		<option value="8">Esp&#237;rito Santo</option>
+		<option value="9">Goi&#225;s</option>
+		<option value="10">Maranh&#227;o</option>
+		<option value="13">Mato Grosso</option>
+		<option value="12">Mato Grosso do Sul</option>
+		<option value="11">Minas Gerais</option>
+		<option value="14">Par&#225;</option>
+		<option value="15">Para&#237;ba</option>
+		<option value="18">Paran&#225;</option>
+		<option value="16">Pernambuco</option>
+		<option value="17">Piau&#237;</option>
+		<option value="19">Rio de Janeiro</option>
+		<option value="20">Rio Grande do Norte</option>
+		<option value="23">Rio Grande do Sul</option>
+		<option value="22">Rond&#244;nia</option>
+		<option value="21">Roraima</option>
+		<option value="24">Santa Catarina</option>
+		<option value="26">S&#227;o Paulo</option>
+		<option value="25">Sergipe</option>
+		<option value="27">Tocantins</option>
+
+	</select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ddlCidade">Cidade</label>
+                    <select name="ddlCidade" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlCidade\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlCidade" disabled="disabled" class="aspNetDisabled form-control">
+
+	</select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ddlBairro">Bairro</label>
+                    <select name="ddlBairro" id="ddlBairro" disabled="disabled" class="aspNetDisabled form-control">
+
+	</select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ltbEspecialidade">Especialidade</label><br />
+                    <select size="4" name="ltbEspecialidade" multiple="multiple" id="ltbEspecialidade" class="selectpicker form-control">
+		<option value="1">Cirurgia e Traumatologia Buco-Maxilo-Faciais</option>
+		<option value="2">Dent&#237;stica</option>
+		<option value="3">Disfun&#231;&#227;o T&#234;mporo-Mandibular e Dor-Orofacial</option>
+		<option value="4">Endodontia</option>
+		<option value="5">Estomatologia</option>
+		<option value="7">Implantodontia</option>
+		<option value="11">Odontogeriatria</option>
+		<option value="9">Odontologia do Trabalho</option>
+		<option value="8">Odontologia Legal</option>
+		<option value="10">Odontologia para Pacientes com Necessidades Especiais</option>
+		<option value="12">Odontopediatria</option>
+		<option value="13">Ortodontia</option>
+		<option value="14">Ortopedia Funcional dos Maxilares</option>
+		<option value="15">Patologia Bucal</option>
+		<option value="16">Periodontia</option>
+		<option value="17">Pr&#243;tese Buco-Maxilo-Facial</option>
+		<option value="18">Pr&#243;tese Dent&#225;ria</option>
+		<option value="6">Radiologia Odontol&#243;gica e Imaginologia</option>
+		<option value="19">Sa&#250;de Coletiva</option>
+
+	</select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ltbEspecialidade">Plano</label><br />
+                    <select size="4" name="ltbPlano" multiple="multiple" id="ltbPlano" class="selectpicker form-control">
+
+	</select>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="txtCro_num">CRO</label>
+                    <input name="txtCro_num" type="text" maxlength="6" id="txtCro_num" class="form-control " placeholder="CRO" />
+                </div>
+                <div class="form-group">
+                    <label for="txtNomePrestador">Nome</label>
+                    <input name="txtNomePrestador" type="text" id="txtNomePrestador" class="form-control" placeholder="Nome" />
+                </div>
+                <div class="form-group">
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Atendimento de Emergência
+                            <div class="material-switch pull-right">
+                                <input id="chkEmergencia" type="checkbox" name="chkEmergencia" />
+                                <label for="chkEmergencia" class="label-primary"></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            Atendimento 24 horas
+                            <div class="material-switch pull-right">
+                                <input id="chk_24_horas" type="checkbox" name="chk_24_horas" />
+                                <label for="chk_24_horas" class="label-primary"></label>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="ddlExibir">Exibir</label>
+                    <select name="ddlExibir" id="ddlExibir" class="form-control">
+		<option selected="selected" value="0">Todos</option>
+		<option value="1">Somente Especialistas</option>
+
+	</select>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p>
+            <input type="submit" name="btBuscar" value="Buscar" id="btBuscar" class="btn btn-primary" />
+            <input type="submit" name="btnVisulizarPDF" value="Visualizar em PDF" id="btnVisulizarPDF" class="btn btn-primary" />
+        </p>
+        <p><a id="lnkRedeDescredenciada" href="javascript:__doPostBack(&#39;lnkRedeDescredenciada&#39;,&#39;&#39;)">Atualizações da rede credenciada</a></p>
+
+
+        <div class="row">
+
+            <div class="container">
+            
+                
+
+                <div class="nst-paginador">
+                    <div id="obj_paginador">
+
+	</div>
+                </div>
+
+                
+
+                <input type="hidden" name="ctl_pagina" id="ctl_pagina" value="1" />
+                <input type="hidden" id="ctl_hidden" name="ctl_hidden" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+                <script type="text/javascript">
+
+                    function BindEvents() {
+                        $(document).ready(function () {
+
+                            $('.selectpicker').selectpicker({
+                                noneSelectedText: 'Selecione'
+                            });
+
+                            $('.list-group-item-rede').click(function () {
+
+                                $('.list-group-item-detail').hide();
+
+                                $(this).find('.list-group-item-detail').toggle();
+
+                                $('html, body').animate({
+                                    scrollTop: $(this).offset().top
+                                }, 100);
+
+
+                            })
+
+                        }); //ready
+
+
+
+                    }
+
+                    Sys.Application.add_load(BindEvents);
+
+                </script>
+
+
+
+            
+</div>
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"upd","displayAfter":1000,"dynamicLayout":true}, null, null, $get("upp"));
+});
+//]]>
+</script>
+</form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+</body>
+</html>

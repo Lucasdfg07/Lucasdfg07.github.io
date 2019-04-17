@@ -1,0 +1,179 @@
+/* Fale Conosco CSS */
+.primeira_linha {
+  margin-top:50px;
+}
+.form {
+  background-color: #f7f7f7;
+    box-shadow: 0px 0px 160px 0px rgba(0,0,0,0.1)inset;
+  height:450px;
+}
+.form span {
+  color: #555;
+}
+.form-group {
+  padding-top:20px;
+}
+
+textarea {
+    position: relative;
+    display: block;
+    width: 399px;
+    height: 102px!important;
+    resize: none;
+}
+.carteirinha {
+  margin-left:-10px;
+}
+.mensagem {
+  margin-top:-30px;
+}
+.mensagem input {
+  width:100%;
+  height: 100px;
+}
+.Envie button {
+  margin-top:10px;
+  margin-left:110px;
+  width:200px;
+}
+.Nome input {
+  width:100%;
+}
+.Nome {
+  margin-left:-15px;
+}
+.mensagem {
+  margin-left:-10px;
+}
+
+.telefone_fixo {
+  padding:0px 30px;
+}
+.linha_imagens {
+  font-size:1.1em;
+}
+.encontre_pelo_mapa {
+  background-color: #9c2649;
+  width:35%;
+  height:35px;
+  padding:7px 20px;
+}
+.encontre_pelo_mapa span {
+  color:#FFF;
+  font-weight:bold;
+  font-size:1.2em;
+}
+/* Media Queries para Alterar resolução */
+@media screen and (max-width: 767px) {
+  .form input`{
+    padding:0px 20px;
+  }
+  .form textarea {
+    width:90%;
+  }
+  .form {
+    height:550px;
+    margin-top:10px;
+  }
+  .endereco, .email, .telefone {
+    padding-top:20px;
+    font-size:0.95em;
+  }
+  .encontre_pelo_mapa {
+    width:400px;
+  }
+  .img_primeira_linha img {
+    width:97%;
+  }
+  .carteirinha label {
+    margin-left:-5px;
+  }
+  .email_label label {
+    margin-left:-15px;
+  }
+  .telefone_label label {
+    margin-left:-15px;
+  }
+  .Envie{
+    margin-left:-100px;
+    margin-top:-20px;
+  }
+  input {
+    width:98%;
+  }
+  .telefone_fixo {
+    margin-left:-20px;
+  }
+  .form {
+    height:620px;
+  }
+  .encontre_pelo_mapa {
+    font-size:0.60em;
+    width:98%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form input`{
+    padding:0px 20px;
+    width:98%;
+  }
+  .form textarea {
+    width:90%;
+  }
+  .form {
+    height:550px;
+    margin-top:10px;
+  }
+  .endereco, .email, .telefone_fixo {
+    padding-top:20px;
+    font-size:0.95em;
+  }
+  .encontre_pelo_mapa {
+    width:400px;
+  }
+  .img_primeira_linha img {
+    width:97%;
+  }
+  .carteirinha label {
+    margin-left:-5px;
+  }
+  .email_label label {
+    margin-left:-15px;
+  }
+  .telefone_label label {
+    margin-left:-15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .form input`{
+    padding:0px 20px;
+  }
+  .form textarea {
+    width:90%;
+  }
+  .form {
+    height:450px;
+    margin-top:0px;
+  }
+  .img_primeira_linha img {
+    width:97%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form input`{
+    width:100%;
+  }
+  .form textarea {
+    width:100%;
+  }
+  .form {
+    height:450px;
+    margin-top:0px;
+  }
+  .img_primeira_linha img {
+    width:97%;
+  }
+}

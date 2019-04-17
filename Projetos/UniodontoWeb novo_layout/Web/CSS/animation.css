@@ -1,0 +1,21 @@
+.logo {
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.telefone {
+  animation-name: move;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.restrito {
+  animation-name: move;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

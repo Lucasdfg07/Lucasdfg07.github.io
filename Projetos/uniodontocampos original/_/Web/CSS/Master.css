@@ -1,0 +1,347 @@
+body {
+  margin-top:100px;
+  overflow-x:hidden;
+}
+/* Navbar */
+.navbar {
+  background-color:rgba(165,10,80,1.0);
+  width:100%;
+}
+#barra-navegacao  {
+  padding-top:0px;
+}
+#barra-navegacao li {
+  padding:0px 20px;
+}
+#barra-navegacao a {
+  text-decoration:none;
+  color:#FFFF;
+  -webkit-color:#FFFF;
+}
+#barra-navegacao a:hover {
+  font-size:1em;
+  text-shadow:-5px 7px 8px;
+}
+#fBusca1, #fBusca2 {
+  float:right;
+  border-radius:100%;
+  height:25px;
+  width:25px;
+  border:none;
+}
+#fBusca2 {
+  margin-top:45px;
+  margin-bottom:20px;
+}
+/* Rodapé */
+.footer {
+  position: absolute;
+  width: 100%;
+   /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  text-decoration:none;
+  background-color:rgba(120,10,40,0.9);
+  margin-top:60px;
+}
+.DesenvolvidoPor a {
+  text-decoration:none;
+  font-size:1.2em;
+  color: #FFF;
+  font-family:Microsoft Tai Le;
+
+}
+
+/* Media Querys para Alterar resolução */
+@media screen and (max-width: 767px) {
+  .navegar_jquery {
+    display:none;
+  }
+  .navbar-toggle {
+    margin-top:-80px;
+    margin-right:20%;
+  }
+  .footer_superior b {
+    font-size:0.7em;
+  }
+  .footer_anterior b {
+    font-size:0.67em;
+  }
+  .DesenvolvidoPor span {
+    font-size:0.6em;
+  }
+  .navbar {
+    font-size:0.87em;
+  }
+  .form2 {
+    padding-top:20px;
+  width:80%;
+  }
+  #fBusca2 {
+    margin-right:-40px;
+    margin-top:-25px;
+  }
+  .dicas_de_saude {
+    margin-left:70px;
+  }
+  .img_inferior {
+    margin-left:10px;
+  font-size:0.9em;
+  width:85%;
+  }
+  .background-shadow {
+    margin-bottom:-240px;
+  }
+  .img_dicas_de_saude {
+    margin-top:100px;
+  }
+  .img_dicas_de_saude img {
+    width:90%;
+  }
+ .planos_div {
+  margin-bottom:20px;
+  margin-left:-110px;
+  }
+  .planos_navbar {
+    width:90%;
+  }
+.planos_div img {
+  width:80%;
+  margin-left:30px;
+  }
+  #barra-navegacao  {
+    padding-top:20px;
+  }
+  .Saiba_mais_div {
+    margin-left:-60px;
+  width:100%;
+  }
+  .Saiba_mais {
+    font-size:0.57em;
+  border-radius:5px;
+  }
+  .Saiba_mais img {
+    margin-top:-3px;
+  }
+.img_224x45 {
+  -webkit-width:40%;
+  width:40%;
+  }
+  .img-logo img {
+  padding-top:10px;
+   -webkit-height:40%;
+  height:40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navegar_jquery {
+    display:none;
+  }
+  #barra-navegacao {
+    margin-top:20px;
+    font-size: 0.7em;
+    display:inline;
+    margin-left:70px;
+  }
+  .navbar-brand {
+    display:inline;
+  }
+  #barra-navegacao a:hover {
+  font-size:0.8em;
+  }
+  .footer_superior b {
+    font-size:0.8em;
+  }
+  .footer_anterior b {
+    font-size:0.77em;
+  }
+  .DesenvolvidoPor span {
+    font-size:0.7em;
+  }
+  .img_dicas_de_saude {
+    margin-top:100px;
+  }
+  .img_224x45 {
+  width:20%;
+  -webkit-width:20%;
+  }
+  .img-logo img {
+  padding-top:10px;
+  height:20%;
+  -webkit-height:20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navegar_jquery {
+    display:none;
+  }
+  #barra-navegacao {
+    margin-top:20px;
+    font-size: 0.8em;
+    margin-left:330px;
+    margin-left:160px;
+  }
+  #barra-navegacao a:hover {
+  font-size:1em;
+  }
+  #barra-navegacao li {
+    padding:0px -10px;
+  }
+  .navbar-brand {
+    display:inline;
+  }
+  .footer_superior b {
+    font-size:0.9em;
+  }
+  .footer_anterior b {
+    font-size:0.87em;
+  }
+  .planos_div img {
+    height:220px;
+    width:222px;
+  }
+  .img_dicas_de_saude img {
+    height:165px;
+    width:161px;
+  }
+.img_224x45 {
+  -webkit-width:50%;
+  width:50%;
+  }
+  .img-logo img {
+  padding-top:10px;
+  -webkit-height:50%;
+  height:50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navegar_jquery {
+    display:block;
+  }
+  #barra-navegacao a:hover {
+  font-size:1.1em;
+  text-shadow:-5px 7px 8px;
+  }
+  #barra-navegacao {
+    font-size: 0.9em;
+    display:inline;
+  }
+  .planos_div img {
+    height:300px;
+    width:292px;
+  }
+  .img_dicas_de_saude img {
+    height:215px;
+    width:211px;
+  }
+  .img_224x45 {
+  -webkit-width:70%;
+  width:70%;
+  }
+  .img-logo img {
+  padding-top:10px;
+  -webkit-height:70%;
+  height:70%;
+  }
+}
+
+/* Divisão Carousel */
+#myCarousel {
+  margin-top:100px;
+  position:absolute;
+  width:80%;
+  margin-left:30px;
+}
+/* Encontre seu dentista divisão */
+.encontre_seu_dentista {
+  margin-top:50px;
+}
+/* Dicas de Saúde divisão */
+.dicas_de_saude {
+  background-color:#EEE0E5;
+  width:54.5%;
+  margin-top:50px;
+  padding:15px 10px;
+}
+.dicas_de_saude span {
+  font-size:1.2em;
+  color: #aa375a;
+}
+.img_dicas_de_saude img {
+  position:relative;
+  margin-top:-50px;
+  margin-left:-10px;
+}
+.dicas_de_saude_texto h5 {
+  color: #555555;
+  font-weight:bold;
+}
+.dicas_de_saude_texto p {
+  font-size:0.85em;
+}
+.continue_lendo {
+  float:right;
+  padding:10px 0px;
+  color: #aa375a;
+  font-weight:bold;
+}
+.continue_lendo:hover {
+  text-decoration:none;
+  color: #aa375a;
+}
+
+/* Planos Divisão */
+.planos_navbar {
+  background-color: #EEE0E5;
+  margin-left:15px;
+  height:40px;
+  padding:3px 5px;
+}
+.planos_h4 {
+  background-color:#CDC1C5;
+  width:100px;
+  height:40px;
+  padding:10px 5px;
+  margin-top:-3px;
+  margin-left:-4px;
+}
+.planos {
+  margin-left:90px;
+  margin-top:50px;
+  width:83%;
+}
+/* Saiba Mais divisão */
+.Saiba_mais {
+  background-color:#af3c5f;
+  height:40px;
+  padding:7px;
+}
+.Saiba_mais span {
+  color:#FFF;
+  font-size:1.2em;
+}
+.Saiba_mais img {
+  float:right;
+}
+.Saiba_mais_texto p {
+  font-size:0.95em;
+  padding-top:15px;
+}
+.Saiba_mais_texto {
+  margin-top:10px;
+  font-family:arial;
+  font-size:0.9em;
+}
+/* Imagens inferiores divisão */
+.img_inferior img{
+  margin-top:50px;
+}
+.TituloOuvidoria {
+  background-color: #f7f7f7;
+  height:50px;
+}
+.TituloOuvidoria span {
+  color: #a22f51;
+}

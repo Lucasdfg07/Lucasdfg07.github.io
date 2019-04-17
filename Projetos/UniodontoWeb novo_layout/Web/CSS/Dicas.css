@@ -1,0 +1,19 @@
+/* CSS Dicas*/
+.banner {
+	margin-top:50px;
+}
+.page-header h2 {
+	color: #9c274a;
+}
+.conteudo-texto p {
+	font-size:0.9em;
+}
+.Paginacao a {
+	text-decoration:none;
+	color: #9c274a;
+	font-size:1.1em;
+	margin-right:50px;
+}
+.banner img {
+	width:98%;
+}

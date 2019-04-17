@@ -1,0 +1,123 @@
+/* Navbar */
+.inicial {
+  animation-name:navegacao_inicial;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  display:none;
+}
+.sobre {
+  animation-name:navegacao_inicial;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-delay: 0.3s;
+}
+.solucao {
+  animation-name:navegacao_inicial;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
+}
+.orcamento {
+  animation-name:navegacao_inicial;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-delay: 0.7s;
+}
+.contato {
+  animation-name:navegacao_contato;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-delay: 0.9s;
+}
+@keyframes navegacao_inicial {
+  from {margin-left:-300px;}
+  to {margin-left:-120px;}
+}
+@keyframes navegacao_sobre {
+  from {margin-left:-300px;}
+  to {margin-left:-120px;}
+}
+@keyframes navegacao_solucao {
+  from {margin-left:-300px;}
+  to {margin-left:-120px;}
+}
+@keyframes navegacao_orcamento {
+  from {margin-left:-300px;}
+  to {margin-left:-120px;}
+}
+@keyframes navegacao_contato {
+  from {margin-left:-300px;}
+  to {margin-left:-120px;}
+}
+
+/* Slides */
+.planejamento {
+  animation-name:planejamento_animacao;
+  animation-duration: 6s;
+  animation-delay:0.6;
+  animation-iteration-count:1;
+  opacity:0;
+  position:absolute;
+}
+@keyframes planejamento_animacao {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+.resultado {
+  animation-name:resultado_animacao;
+  animation-duration: 6s;
+  animation-delay: 5.7s;
+  animation-iteration-count:1;
+  opacity:0;
+  position:absolute;
+}
+@keyframes resultado_animacao {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+.apresentacao {
+  animation-name:apresentacao_animacao;
+  animation-duration: 6s;
+  animation-delay: 11.6s;
+  animation-iteration-count:1;
+  opacity:0;
+  position:absolute;
+  animation-fill-mode: forwards;
+}
+@keyframes apresentacao_animacao {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+ /* borda article h3 */
+.linha_h3 {
+   animation-name:linha_h3;
+   animation-fill-mode: forwards;
+   animation-duration: 60s;
+
+   /* animation-play-state: paused;  */
+ }
+ @keyframes linha_h3 {
+   from {width:0%;}
+   to {width:100%;}
+ }
+ .linha_h3_solucoes {
+    animation-name:linha_h3_solucoes;
+    animation-fill-mode: forwards;
+    animation-duration: 60s;
+
+    /* animation-play-state: paused;  */
+  }
+
+  @keyframes linha_h3_solucoes {
+    from {margin-left:100%;}
+    to {margin-left:0%;}
+  }
+
+/* Contrate Botão */
+@keyframes modal-orcamento-basico {
+  from {opacity:0;}
+  to {opacity:1;}
+}

@@ -1,0 +1,645 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="imagens/artificial-intelligence.png"/>
+
+    <title>Lucas Siqueira Fernandes</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="CSS/index.css" rel="stylesheet">
+    <link href="CSS/animations.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+     <div id="loading" style="display: block">
+      <img src="https://media.giphy.com/media/DVvC66lWbGB8s/giphy.gif" style="width:200px;height:200px;" />
+    </div>
+
+
+    <div id="conteudo" style="display:none;">
+      <header>
+          <img src="imagens/space.jpg" />
+
+          <div id="slide_div"></div>
+
+          <!-- Botão da Navbar. (aparece em resolução < 768px) -->
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed"
+           data-toggle="collapse" data-target="#barra-navegacao">
+             <span class="sr-only">Alternar navegação</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+         </div>
+
+
+          <div class="col-md-2 collapse navbar-collapse" id="barra-navegacao">
+            <ul class="navegacao">
+              <a href="#slide_div" class="active"><li class="inicial scrollNav"><span>PÁGINA INICIAL</span></li></a>
+              <a href="#sobre_mim_div"><li class="sobre scrollNav"><span>SOBRE</span></li></a>
+              <a href="#solucoes_div"><li class="solucao scrollNav"><span>SOLUÇÕES</span></li></a>
+              <a href="#orcamento_div"><li class="orcamento scrollNav"><span>ORÇAMENTO</span></li></a>
+              <a href="#form_div"><li class="contato scrollNav"><span>CONTATO</span></li></a>
+            </ul>
+          </div>
+
+
+          <div class="col-md-10">
+
+            <div class="titulo_slide">
+              <div class="planejamento">
+                <h2>Planejamento</h2>
+              </div>
+
+              <div class="resultado">
+                <h2>Resultado</h2>
+              </div>
+
+              <div class="apresentacao">
+                <h2>Apresentação</h2>
+              </div>
+            </div>
+
+            <div class="slide" id="slide">
+              <div class="col-md-7">
+                <div class="planejamento">
+                  <img src="imagens/planejamento.png" />
+                </div>
+
+                <div class="resultado">
+                  <img src="imagens/resultado.png" />
+                </div>
+
+                <div class="apresentacao">
+                  <img src="imagens/ideia.png" />
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="planejamento">
+                  <p>Um bom planejamento resulta em aumento de produtividade e maior captação de clientes.</p>
+                  <p>Negócios que possuem uma interatividade virtual com seus clientes conseguem abranger um público alvo
+                    muito maior.</p>
+                </div>
+
+                <div class="resultado">
+                  <p>Com um Website funcional, é inerente a conquista dos resultados.</p>
+                  <p>Investir na digitalização é investir no sucesso a médio/longo prazo.</p>
+                </div>
+
+                <div class="apresentacao">
+                  <p>Um negócio necessita de uma identidade visual, e nada mais apresentável que realizar tal demonstração
+                    por uma identidade virtual.</p>
+                  <p>Um negócio apresentável é uma ideia bem apresentada!</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      </header>
+
+      <div id="sobre_mim_div">
+      </div>
+
+
+      <div class="background-fixed">
+        <div class="container">
+          <article class="sobre_mim_article">
+
+            <div id="sobre_mim">
+              <h3>Sobre mim</h3>
+
+              <div class="linha_h3">
+              </div>
+
+              <section class="col-md-5 card_img">
+                <img src="imagens/card.png" />
+              </section>
+
+              <aside class="col-md-7">
+                <div id="accordion">
+
+    						  <div class="card">
+      							<div class="card-header" id="headingOne">
+      							  <h5>
+        								<button class="btn btn-danger" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        								  Dados <span class="glyphicon glyphicon-menu-down"></span>
+        								</button>
+      							  </h5>
+      							</div>
+
+      							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      								<div class="card-body">
+      									<b>Meu nome é Lucas Siqueira Fernandes.</b>
+                        <b>Estudante de Sistemas de Informação e resido na cidade de Campos dos Goytacazes - RJ.</b>
+      								</div>
+      							</div>
+    						  </div>
+
+    						  <div class="card">
+      							<div class="card-header" id="headingTwo">
+      							  <h5>
+        								<button class="btn btn-primary collapsed" data-toggle="collapse"
+                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        								 Prazos e Entrega <span class="glyphicon glyphicon-menu-down"></span>
+        								</button>
+      							  </h5>
+      							</div>
+
+      							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      								<div class="card-body">
+      									<b>Ofereço uma programação de fácil manutenção e codificação simples e otimizada.
+                        Assim, acordando o prazo de entrega e a ideia a ser realizada, estabeleceremos datas
+                        e reuniões visando a entrega do produto final idealizado.</b>
+      								</div>
+      							</div>
+    						  </div>
+
+    						</div>
+              </aside>
+            </div>
+
+          </article>
+        </div>
+      </div>
+
+
+      <div class="background-fixed-solucoes-orcamento">
+        <div class="container">
+          <article class="solucoes_div" id="solucoes_div">
+            <section>
+              <div class="titulo_solucoes">
+                <h2>Soluções</h2>
+
+                <div class="linha_h3_solucoes">
+                </div>
+              </div>
+
+
+              <div id="slideShow" class="carousel slide col-md-12" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#slideShow" data-slide-to="0" class="active"></li>
+                  <li data-target="#slideShow" data-slide-to="1"></li>
+                  <li data-target="#slideShow" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="imagens/responsividade.jpg" alt="Primeiro slide">
+
+                    <!-- Divisão para escrita dentro do slide -->
+                    <div class="carousel-caption">
+                     <h3>Responsividade</h3>
+                     <p>Realizo também a adequação do website, podendo ser melhor visualizado em Tablets,
+                     telefones celulares e outros dispositivos.</p>
+                   </div>
+
+                  </div>
+
+                  <div class="item">
+                    <img src="imagens/planejamento_real.jpg" alt="Segundo slide">
+
+                    <!-- Divisão para escrita dentro do slide -->
+                    <div class="carousel-caption">
+                     <h3>Olho na meta!</h3>
+                     <p>Com todo o detalhamento em mãos, acordaremos reuniões e prazos a serem realizados
+                     a fim de realizar um melhor molde do produto final!</p>
+                   </div>
+
+                  </div>
+
+                  <div class="item">
+                    <img src="imagens/alvo.jpg" alt="Terceiro slide">
+
+                    <!-- Divisão para escrita dentro do slide -->
+                    <div class="carousel-caption">
+                     <h3>Na mosca</h3>
+                     <p>O início do desenvolvimento do website é imediato após o acordo de prazos e detalhamento dos requisitos,
+                     junto ao layout a ser apresentado.</p>
+                   </div>
+
+                  </div>
+                </div>
+
+
+                <a class="carousel-control left" href="#slideShow" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control right" href="#slideShow" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+            </section>
+          </article>
+
+
+          <!-- Orçamento -->
+          <article class="orcamento_div" id="orcamento_div">
+            <section class="col-md-3 orcamento_corpo">
+              <div class="orcamento_div_titulo"><p>Básico</p></div>
+              <span>A partir de 2 parcelas de</span>
+              <h2>R$ 500,00</h2>
+              <span>Valor Total: R$1.000,00</span>
+
+              <ul class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                  <li>1 Página Principal</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                  <li>1 Ano de Domínio</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                  <li>1 Ano de Hospedagem</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                  <li>Até 2 Contas de Email</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                  <li>Manutenção R$ 50/mês</li>
+                </a>
+              </ul>
+
+              <button class="btn btn-danger" onclick="contrateAquiBasico()">Contrate Aqui</button>
+            </section>
+
+            <aside class="col-md-3 orcamento_corpo">
+              <div class="orcamento_div_titulo"><p>Iniciante</p></div>
+
+              <span>A partir de 2 parcelas de</span>
+              <h2>R$ 650,00</h2>
+              <span>Valor Total: R$1.300,00</span>
+
+              <ul class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                  <li>2 Páginas</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                  <li>1 Ano de Domínio</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                  <li>1 Ano de Hospedagem</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                  <li>Até 2 Contas de Email</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                  <li>Manutenção R$ 70/mês</li>
+                </a>
+              </ul>
+
+              <button class="btn btn-danger" onclick="contrateAquiIniciante()">Contrate Aqui</button>
+            </aside>
+
+            <aside class="col-md-3 orcamento_corpo">
+              <div class="orcamento_div_titulo"><p>Intermediário</p></div>
+
+              <span>A partir de 3 parcelas de</span>
+              <h2>R$ 530,00</h2>
+              <span>Valor Total: R$1.590,00</span>
+
+              <ul class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                  <li>4 Páginas</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                  <li>1 Ano de Domínio</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                  <li>1 Ano de Hospedagem</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                  <li>Até 3 Contas de Email</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                  <li>Manutenção R$ 90/mês</li>
+                </a>
+              </ul>
+
+              <button class="btn btn-danger" onclick="contrateAquiIntermediario()">Contrate Aqui</button>
+            </aside>
+
+            <aside class="col-md-3 orcamento_corpo">
+              <div class="orcamento_div_titulo"><p>Avançado</p></div>
+
+              <span>A partir de 3 parcelas de</span>
+              <h2>R$ 700,00</h2>
+              <span>Valor Total: R$2.100,00</span>
+
+              <ul class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                  <li>5+ Páginas</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                  <li>1 Ano de Domínio</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                  <li>1 Ano de Hospedagem</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                  <li>Até 4 Contas de Email</li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                  <li>Manutenção R$ 120/mês</li>
+                </a>
+              </ul>
+
+              <button class="btn btn-danger" onclick="contrateAquiAvancado()">Contrate Aqui</button>
+            </aside>
+          </article>
+        </div>
+
+
+        <!-- Modal Orçamento Basico -->
+        <div class="modal-orcamento modal-orcamento-basico" id="modal-orcamento-basico">
+          <form method="POST" action="PHP/formularioBasico.php">
+            <div class="modal_titulo">
+              <h2>Básico</h2>
+              <span>Clique fora do formulário para fechar</span>
+            </div>
+
+            <div class="linha_h3_form">
+            </div>
+
+            <div class="form-group">
+              <label>Nome</label>
+              <input type="text" name="nome" class="form-control" placeholder="Digite seu Nome"/>
+            </div>
+
+            <div class="form-group">
+              <label>*Email</label>
+              <input type="email" name="email" class="form-control" required placeholder="Digite seu Email"/>
+            </div>
+
+            <div class="modal_form-group modal_select-group">
+              <label>*Selecione o assunto</label>
+              <select name="assunto" class="form-control modal_select-form" required>
+                <option value="" selected></option>
+                <option value="orcamento">Orçamento</option>
+                <option value="discussao">Discussões e Ideias</option>
+                <option value="outros">Outros</option>
+              </select>
+
+            </div>
+
+            <div class="modal_form-group modal_textarea-group">
+              <label>Digite sua Mensagem</label>
+              <textarea type="text" name="mensagem" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-primary">Enviar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal Orçamento Iniciante -->
+      <div class="modal-orcamento modal-orcamento-iniciante" id="modal-orcamento-iniciante">
+        <form method="POST" action="PHP/formularioIniciante.php">
+          <div class="modal_titulo">
+            <h2>Iniciante</h2>
+            <span>Clique fora do formulário para fechar</span>
+          </div>
+
+          <div class="linha_h3_form">
+          </div>
+
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" name="nome" class="form-control" placeholder="Digite seu Nome"/>
+          </div>
+
+          <div class="form-group">
+            <label>*Email</label>
+            <input type="email" name="email" class="form-control" required placeholder="Digite seu Email"/>
+          </div>
+
+          <div class="modal_form-group modal_select-group">
+            <label>*Selecione o assunto</label>
+            <select name="assunto" class="form-control modal_select-form" required>
+              <option value="" selected></option>
+              <option value="orcamento">Orçamento</option>
+              <option value="discussao">Discussões e Ideias</option>
+              <option value="outros">Outros</option>
+            </select>
+
+          </div>
+
+          <div class="modal_form-group modal_textarea-group">
+            <label>Digite sua Mensagem</label>
+            <textarea type="text" name="mensagem" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Modal Orçamento intermediario -->
+      <div class="modal-orcamento modal-orcamento-intermediario" id="modal-orcamento-intermediario">
+        <form method="POST" action="PHP/formularioIntermediario.php">
+          <div class="modal_titulo">
+            <h2>Intermediario</h2>
+            <span>Clique fora do formulário para fechar</span>
+          </div>
+
+          <div class="linha_h3_form">
+          </div>
+
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" name="nome" class="form-control" placeholder="Digite seu Nome"/>
+          </div>
+
+          <div class="form-group">
+            <label>*Email</label>
+            <input type="email" name="email" class="form-control" required placeholder="Digite seu Email"/>
+          </div>
+
+          <div class="modal_form-group modal_select-group">
+            <label>*Selecione o assunto</label>
+            <select name="assunto" class="form-control modal_select-form" required>
+              <option value="" selected></option>
+              <option value="orcamento">Orçamento</option>
+              <option value="discussao">Discussões e Ideias</option>
+              <option value="outros">Outros</option>
+            </select>
+
+          </div>
+
+          <div class="modal_form-group modal_textarea-group">
+            <label>Digite sua Mensagem</label>
+            <textarea type="text" name="mensagem" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Modal Orçamento avançado -->
+      <div class="modal-orcamento modal-orcamento-avancado" id="modal-orcamento-avancado">
+        <form method="POST" action="PHP/formularioAvancado.php">
+          <div class="modal_titulo">
+            <h2>Avançado</h2>
+            <span>Clique fora do formulário para fechar</span>
+          </div>
+
+          <div class="linha_h3_form">
+          </div>
+
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" name="nome" class="form-control" placeholder="Digite seu Nome"/>
+          </div>
+
+          <div class="form-group">
+            <label>*Email</label>
+            <input type="email" name="email" class="form-control" required placeholder="Digite seu Email"/>
+          </div>
+
+          <div class="modal_form-group modal_select-group">
+            <label>*Selecione o assunto</label>
+            <select name="assunto" class="form-control modal_select-form" required>
+              <option value="" selected></option>
+              <option value="orcamento">Orçamento</option>
+              <option value="discussao">Discussões e Ideias</option>
+              <option value="outros">Outros</option>
+            </select>
+
+          </div>
+
+          <div class="modal_form-group modal_textarea-group">
+            <label>Digite sua Mensagem</label>
+            <textarea type="text" name="mensagem" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+
+
+      <style type="text/css">
+      .background-fixed-formulario {
+        padding-bottom:30px;
+        background: url('imagens/background-formulario.jpg') fixed no-repeat;
+        background-size:cover;
+      }
+      .background-fixed-solucoes-orcamento {
+        padding-bottom:50px;
+        background: url('imagens/solucao-wallpaper.jpg') no-repeat fixed;
+        background-size:cover;
+      }
+      .background-fixed {
+        padding-bottom:50px;
+        background: url('imagens/sobre-background.jpg') no-repeat fixed;
+        background-size:cover;
+      }
+      </style>
+
+
+      <div class="background-fixed-formulario">
+        <div class="container">
+          <article class="form_div" id="form_div">
+            <section>
+
+              <form method="POST" action="PHP/formulario.php">
+                <div class="titulo">
+                  <h2>Contato</h2>
+                </div>
+
+                <div class="linha_h3_form">
+                </div>
+
+                <div class="form-group">
+                  <label>Nome</label>
+                  <input type="text" name="nome" class="form-control" placeholder="Digite seu Nome"/>
+                </div>
+
+                <div class="form-group">
+                  <label>*Email</label>
+                  <input type="email" name="email" class="form-control" required placeholder="Digite seu Email"/>
+                </div>
+
+                <div class="form-group select-group">
+                  <label>*Selecione o assunto</label>
+                  <select name="assunto" class="form-control select-form" required>
+                    <option value="" selected></option>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="discussao">Discussões e Ideias</option>
+                    <option value="outros">Outros</option>
+                  </select>
+
+                </div>
+
+                <div class="form-group textarea-group">
+                  <label>Digite sua Mensagem</label>
+                  <textarea type="text" name="mensagem" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-primary">Enviar</button>
+                </div>
+
+              </form>
+            </section>
+          </article>
+
+        </div>
+      </div>
+
+
+
+
+      <footer style="background-color:rgba(250,250,250);">
+          <h2>Lucas Siqueira - Programador Web</h2>
+      </footer>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="popover"]').popover()
+    })
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--- JS  -->
+    <script type="text/javascript" src="JS/load.js"></script>
+
+    <script type="text/javascript" src="JS/contrate.js"></script>
+
+    <script type="text/javascript" src="JS/rolar.js"></script>
+
+    <script src=”https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js”></script>
+  </body>
+</html>

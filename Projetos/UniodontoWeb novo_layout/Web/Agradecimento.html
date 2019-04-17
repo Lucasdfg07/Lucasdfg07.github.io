@@ -1,0 +1,668 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Uniodonto Campos</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.png">
+
+      <!-- Bootstrap -->
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="CSS/Master.css" rel="stylesheet">
+      <link href="CSS/Planos.css" rel="stylesheet">
+      <link href="CSS/precadastro.css" rel="stylesheet">
+      <link href="CSS/animation.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/load.js"></script>
+
+  </head>
+
+
+  <body class="body">
+
+    <div id="loading" style="display: block">
+      <img src="https://media.giphy.com/media/VlJkP9Vxi4nkI/giphy.gif" style="width:200px;height:200px;" />
+    </div>
+
+
+    <div style="display:none" id="conteudo">
+      <header>
+        <div class="col-md-4 logo">
+            <img src="Images/logo.png" />
+        </div>
+
+        <div class="col-md-4 telefone">
+            <img src="Images/telefones.png" />
+        </div>
+
+        <div class="col-md-4 restrito">
+            <img src="Images/restrito_top.png" />
+
+
+              <div class="col-md-4">
+                <a href="http://prestador.odontosfera.com.br/login.aspx?operadora=402516">
+                  <img src="Images/restrito_cooperado.png" style="width:110%;"/>
+                </a>
+              </div>
+
+
+              <div class="col-md-4">
+                  <a href="http://prestador.odontosfera.com.br/login.aspx?operadora=402516">
+                    <img src="Images/restrito_beneficiario.png" style="width:120%;" />
+                  </a>
+              </div>
+
+
+              <div class="col-md-4">
+                <a href="http://prestador.odontosfera.com.br/login.aspx?operadora=402516">
+                  <img src="Images/restrito_empresa.png" />
+                </a>
+              </div>
+        </div>
+      </header>
+
+
+      <!-- Botão da Navbar. (aparece em resolução < 768px) -->
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed"
+       data-toggle="collapse" data-target="#barra-navegacao">
+         <span class="sr-only">Alternar navegação</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+     </div>
+
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Institucional.html">Institucional</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Planos.html">Planos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="EncontreSeuDentista.html">Encontre seu dentista</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="FaleConosco.html">Fale Conosco</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="DicasDeSaude.html">Dicas de Saúde</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container" style="margin-top:50px;">
+        <div class="row capa col-md-4">
+          <img src="Images/smile.jpg" />
+        </div>
+        <div class="row texto_capa col-md-8">
+          <span class="texto_capa">
+            <h2>Seja muito bem vindo ao nosso plano odontológico!</h2>
+            <br />
+            <p class="texto_corpo">Agora você já parte da maior rede de dentistas do Brasil. <br />
+            Seus dados estão sendo cadastrados e em 24 horas você poderá ser atendido, caso necessite, em Urgência e Emergência.<br /><br />
+            <br /><br />
+            A Uniodonto Campos é responsável pelo atendimento nas cidades de Campos dos Goytacazes,<br />
+            São Francisco de Itabapoana, São Fidélis, Cardoso Moreira e São João da Barra, mas fique tranquilo, aonde
+            estiver no Brasil e tiver um dentista conveniado, você poderá ser atendido.<br /><br />
+            Abaixo você encontrará mais informações do seu plano.</p>
+          </span>
+        </div>
+      </div>
+
+        <div class="row_principal">
+          <div class="planos">
+            <div class="col-md-4 cobertura">
+              <h3>Cobertura</h3>
+              <span>
+                Aqui você terá toda cobertura completa do seu plano.
+                Qualquer dúvida não hesite em entrar em contato.
+              </span>
+              <br />
+              <br />
+              <a style="cursor: pointer;" onclick="Cobertura(this,true);"><button class="btn btn-primary">Ver Mais</button></a>
+            </div>
+
+            <div class="col-md-4 guia_dentistas">
+              <h3>Guia dos Dentistas</h3>
+              <span>
+                Temos vários profissionais espalhados por todo o Brasil,
+                você pode consultar o mais próximo de você,
+                ligar e agendar a consulta diretamente no consultório.
+                <br /><br />
+                Clique abaixo e acesse nossa rede de cooperados.
+              </span>
+              <br />
+              <br />
+              <a href="http://uniodontocampos.com.br/Brasil.html"><button class="btn btn-primary">Ver Mais</button></a>
+            </div>
+
+            <div class="col-md-4 portal_cliente">
+              <h3>Portal do Cliente</h3>
+              <span>
+                No portal do cliente, você terá acesso a todas as informações do seu plano como orçamentos,
+                declaração para imposto de renda, tratamentos realizados, segunda via de boleto e muito mais.
+              </span>
+              <br />
+              <br />
+              <a href="http://cliente.odontosfera.com.br/Login.aspx?operadora=402516"><button class="btn btn-primary">Ver Mais</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="voucher">
+            <div class="page-header">
+              <h4>Foi indicado para a Uniodonto?! Dê o desconto a quem te indicou!</h4>
+            </div>
+            <div class="clique_aqui">
+              <a href="voucher_formulario.html"><button class="btn btn-success" type="submit">Clique aqui</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="aplicativo">
+          <div class="app_superior">
+              <div class="page-header">
+                <h2>Aplicativo Uniodonto Campos</h2>
+              </div>
+
+              <div class="col-md-3">
+                <div class="page-header">
+                  <h4>Carteirinha Virtual</h4>
+                </div>
+                <div class="texto-corpo">
+                  <span>
+                    Não precisa se preocupar, agora sua carteirinha está na palma da mão!
+                    Basta baixar o nosso aplicativo e apresentá-la no dia da consulta, é simples,
+                    prático e fácil!
+                  </span>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="page-header">
+                  <h4>Guia dos Dentistas</h4>
+                </div>
+                <div class="texto-corpo">
+                  <span>
+                    Pode acessar a rede dos dentistas mais próximos de você!
+                  </span>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <img src="Images/iphone.png" />
+              </div>
+          </div>
+          <div class="app_inferior">
+            <div class="col-md-4">
+              <div class="page-header">
+                <h4>Portal do Cliente</h4>
+              </div>
+              <div class="texto-corpo">
+                <span>
+                  Acompanhe seus tratamentos direto do seu smartphone.
+                </span>
+              </div>
+            </div>
+
+            <div class="img_play_store col-md-4">
+              <a href="https://play.google.com/store/apps/details?id=br.com.odontosfera.uniodontocampos">
+              <img src="Images/Playstore.jpg" /></a>
+            </div>
+
+            <div class="img_app_store col-md-4">
+              <a href="https://itunes.apple.com/br/app/uniodonto-mobile/id892896553?mt=8">
+              <img src="Images/Appstore.jpg" /></a>
+            </div>
+          </div>
+        </div>
+
+      <div class="Cobertura">
+          <div class="bg">
+          </div>
+
+          <div class="faleconosco-form">
+            <img src="Images/faleconosco-top.jpg" onclick="Cobertura(this);" />
+            <div>
+              <p>
+                COBERTURAS E PROCEDIMENTOS GARANTIDOS
+              </p>
+              <p>
+                3.1. A cobertura deste plano se refere aos serviços exclusivamente odontológicos
+                conforme rol editado pela Agência Nacional de Saúde Suplementar, e suas atualizações.
+              </p>
+              <p>
+                URGÊNCIA/EMERGÊNCIA
+              </p>
+              <p>
+                <li>Colagem de Fragmentos Dentários
+                <li>Controle de Hemorragia com ou sem Aplicação de Agente Hemostático
+                <li>Incisão e Drenagem (Intra ou Extra-Oral) de Abscesso, Hematoma ou Flegmão da Região
+                Buco-Maxilo-Facial
+                <li>Imobilização Dentária
+                <li>Recimentação de Peça/Trabalho Protético
+                <li>Redução de Luxação da Atm
+                <li>Reimplante de Dente Avulsionado com Contenção
+                <li>Sutura de Ferida Buco-Maxilo-Facial
+                <li>Tratamento de Abscesso Periodontal
+                <li>Tratamento de Alveolite
+                <li>Tratamento de Odontalgia Aguda
+              </p>
+              <p>
+                DIAGNÓSTICO
+              </p>
+              <p>
+                <li>Consulta Odontológica Inicial
+              </p>
+              <p>
+                CONDICIONAMENTO
+              </p>
+              <p>
+                <li>Condicionamento em Odontologia
+              </p>
+              <p>
+                EXAMES
+              </p>
+              <p>
+                <li>Procedimento Diagnóstico Anatomopatológico (em Peça Cirúrgica, Material de Punção/Biópsia
+                e Citologia Esfoliativa da Região Bucomaxilo-Facial)
+                <li>Teste de Fluxo Salivar
+              </p>
+              <p>
+                RADIOLOGIA
+              </p>
+              <p>
+                <li>Radiografia Interproximal (Bite-Wing)
+                <li>Radiografia Oclusal
+                <li>Radiografia Panorâmica de Mandíbula/Maxila (Ortopantomografia)
+                <li>Radiografia Periapical
+              </p>
+              <p>
+                PREVENÇÃO EM SAÚDE BUCAL
+              </p>
+              <p>
+                <li>Aplicação de Selante
+                <li>Aplicação Tópica de Flúor
+                <li>Atividade Educativa em Saúde Bucal
+                <li>Controle de Biofilme Dental (Placa Bacteriana)
+                <li>Dessensibilização Dentária
+                <li>Profilaxia - Polimento Coronário
+                <li>Remineralização Dentária
+              </p>
+              <p>
+                DENTÍSTICA
+              </p>
+              <p>
+                <li>Adequação do Meio Bucal
+                <li>Ajuste Oclusal
+                <li>Aplicação de Cariostático
+                <li>Faceta Direta em Resina Fotopolimerizável
+                <li>Núcleo de Preenchimento
+                <li>Remoção de Fatores de Retenção de Biofilme Dental (Placa Bacteriana)
+                <li>Restauração em Amálgama
+                <li>Restauração em Ionômero de Vidro Restauração em
+                <li>Resina Fotopolimerizável
+                <li>Restauração Temporária /Tratamento Expectante
+                <li>Tratamento Restaurador Atraumático
+              </p>
+              <p>
+                PERIODONTIA
+              </p>
+              <p>
+                <li>Aumento de Coroa Clínica
+                <li>Cirurgia Periodontal a Retalho
+                <li>Cunha Proximal
+                <li>Gengivectomia/Gengivoplastia
+                <li>Raspagem Sub-Gengival e Alisamento Radicular/Curetagem de Bolsa Periodontal
+                <li>Raspagem Supra-Gengival e Polimento Coronário
+              </p>
+              <p>
+                ENDODONTIA
+              </p>
+              <p>
+                <li>Capeamento Pulpar Direto – Excluindo Restauração Final
+                <li>Pulpotomia
+                <li>Remoção de Corpo Estranho Intra-Canal
+                <li>Remoção de Núcleo Intra-Canal
+                <li>Remoção de Peça/Trabalho Protético
+                <li>Tratamento de Perfuração (Radicular/Câmara Pulpar)
+                <li>Tratamento Endodôntico em Dente com Rizogênese Incompleta
+                <li>Tratamento Endodôntico em Dentes Decíduos
+                <li>Tratamento Endodôntico em Dentes Permanentes
+                <li>Retratamento Endodôntico em Dentes Permanentes
+              </p>
+              <p>
+                CIRURGIA
+              </p>
+              <p>
+                <li>Alveoloplastia
+                <li>Amputação Radicular com ou sem Obturação Retrógrada
+                <li>Apicetomia com ou sem Obturação Retrógrada
+                <li>Aprofundamento/Aumento de Vestíbulo
+                <li>Biópsia de Boca
+                <li>Biópsia de Glândula Salivar
+                <li>Biópsia de Lábio
+                <li>Biópsia de Língua
+                <li>Biópsia de Mandíbula/Maxila
+                <li>Bridectomia/Bridotomia
+                <li>Cirurgia para Tórus/Exostose
+                <li>Exérese de Pequenos Cistos de Mandíbula/Maxila
+                <li>Exérese ou Excisão de Mucocele, Rânula ou Cálculo Salivar
+                <li>Exodontia a Retalho
+                <li>Exodontia de Raiz Residual
+                <li>Exodontia Simples de Decíduo
+                <li>Exodontia Simples de Permanente
+                <li>Frenotomia/Frenectomia Labial
+                <li>Frenotomia/Frenectomia Lingual
+                <li>Odonto-Secção
+                <li>Punção Aspirativa com Agulha Fina/Coleta de Raspado em Lesões ou Sítios Específicos
+                da Região Buco-Maxilo-Facial
+                <li>Redução de Fratura Alvéolo Dentária
+                <li>Remoção de Dentes Retidos (Inclusos, Semi-Inclusos ou Impactados)
+                <li>Tratamento Cirúrgico de Fístulas Buco-Nasais ou Buco-Sinusais
+                <li>Tratamento Cirúrgico de Tumores Benignos e Hiperplasias de Tecidos Moles da Região
+                Buco-Maxilo-Facial
+                <li>Tratamento Cirúrgico de Tumores Benignos e Hiperplasias de Tecidos Ósseos/Cartilaginosos
+                na Mandíbula/Maxila
+                <li>Tratamento Cirúrgico de Tumores Benignos Odontogênicos sem Reconstrução Ulectomia/Ulotomia
+              </p>
+              <p>
+                PRÓTESE
+              </p>
+              <p>
+                <li>Coroa Unitária Provisória com ou sem Pino/Provisório para Preparo de RMF
+                <li>Reabilitação com Coroa de Acetato, Aço ou Policarbonato
+                <li>Reabilitação com Coroa Total de Cerômero Unitária - Inclui a Peça Protética
+                <li>Reabilitação com Coroa Total Metálica Unitária - Inclui a Peça Protética
+                <li>Reabilitação com Núcleo Metálico fundido/Núcleo Pré-Fabricado - Inclui a Peça Protética
+                <li>Reabilitação com Restauração Metálica Fundida (RMF) Unitária - Inclui a Peça Protética
+            </div>
+          </div>
+        </div>
+
+      <style>
+        .capa img {
+          height:350px;
+          width:100%;
+          margin-left:20px;
+        }
+        .texto_capa {
+          font-size: 0.85em;
+          margin-top:-30px;
+          margin-left:40px;
+          color: rgba(10,10,10,1.0);
+        }
+        p {
+          margin-left:50px;
+          width:80%;
+          padding-top:15px;
+          font-size:1.35em;
+          text-shadow: 1px -1px 10px rgba(255,255,255,1.0);
+          color: black;
+        }
+        .row_principal {
+          margin-top:180px;
+          margin-bottom:500px;
+        }
+        .cobertura {
+          margin-left:50px;
+        }
+        .portal_cliente {
+          margin-left:50px;
+        }
+        .guia_dentistas {
+          margin-left:40px;
+        }
+        .planos > .col-md-4 {
+          height:300px;
+          width:28%;
+          padding-left:40px;
+          margin-left:53px;
+        }
+        .planos > .col-md-4:hover {
+          background-color:rgba(170,22,42,0.1);
+          border-radius:4px;
+        }
+        .voucher h4 {
+          margin-left:28%;
+        }
+        .voucher > .clique_aqui {
+          margin-left:45%;
+        }
+        .aplicativo > .app_superior >.col-md-6 img {
+          height:400px;
+          margin-top:-100px;
+          transform: rotate(30deg);
+          margin-left:65%;
+
+        }
+        .aplicativo {
+          width:100%;
+          height:700px;
+          margin-top:170px;
+          box-shadow: -2px -2px 30px rgba(10,10,10,0.2);
+          padding-top:10px;
+        }
+        .app_superior > .col-md-3 {
+          margin-left:10%;
+          font-size:1.1em;
+        }
+        .app_inferior > .col-md-4 {
+          margin-top:-200px;
+          margin-left:20%;
+          font-size:1.1em;
+        }
+        .col-md-3 h4 {
+          color:rgba(170,22,42,1.0);
+        }
+        .col-md-4 h4 {
+          color:rgba(170,22,42,1.0);
+        }
+        .page-header h2{
+          margin-left:100px;
+          font-size:2.2em;
+        }
+        .img_play_store img {
+          height:40px;
+          width:130px;
+          margin-top:200px;
+          margin-left:360px;
+        }
+        .img_app_store img {
+          height:40px;
+          width:130px;
+          margin-top:200px;
+          margin-left:100px;
+        }
+        .img_app_store, .img_play_store {
+          height:40px;
+          width:130px;
+        }
+        .footer {
+          margin-top:100px;
+        }
+        @media screen and (max-width: 767px) {
+          .capa {
+            font-size:0.9em;
+            margin-right:20%;
+          }
+        .capa img {
+            height:90%;
+          width:90%;
+          margin-left:20%;
+          }
+          .texto_capa {
+            margin-right:40%;
+            font-size:0.82em;
+            color: rgba(244,244,244,1.0);
+            text-shadow:2px 2px 10px rgba(0,0,0,0.8);
+            margin-top:60px;
+            width:70%;
+          }
+          p {
+            margin-left:-1%;
+            font-size:1.3em;
+            text-shadow:0px 0px 0px;
+            color:black;
+          }
+        .row_principal {
+          margin-top:-50px;
+          margin-bottom:100px;
+          }
+        .voucher h4 {
+            margin-left:15%;
+          }
+        .voucher > .clique_aqui {
+            margin-left:15%;
+          }
+          .planos > .col-md-4 {
+            margin-left:-15%;
+            margin-top:50px;
+            width:80%;
+            padding-top:40px;
+            height: auto;
+          }
+          .aplicativo {
+            margin-top:100px;
+            height:1400px;
+          }
+          .app_superior {
+            font-size:0.8em;
+          }
+          .aplicativo > .app_superior > .col-md-6 img {
+            margin-left:25%;
+            margin-top:50px;
+          }
+          .app_inferior {
+            font-size:0.8em;
+          }
+          .app_inferior {
+            margin-top:300px;
+            margin-left:-15%;
+          }
+          .img_app_store img {
+            margin-top:400px;
+            margin-left:-15%;
+
+          }
+          .img_play_store img {
+            margin-top:300px;
+            margin-left:-15%;
+          }
+        }
+
+        @media screen and (min-width: 768px) {
+
+        }
+
+        @media screen and (min-width: 992px) {
+
+        }
+
+        @media screen and (min-width: 1200px) {
+
+        }
+      </style>
+
+
+    <!-- Rodapé -->
+    <footer class="footer">
+
+      <div class="container">
+        <div class="footer_superior">
+          <div class="col-md-4">
+            <img src="Images/ans.png" style="float:left; padding-top:15px;">
+          </div>
+          <div class="col-md-4">
+            <span align="center" style="padding-left:80px;"><b>Disque ANS: 0800 701 9656</b></span>
+          </div>
+          <div class="col-md-4">
+            <span style="float:right;" class="ans_site"><b>www.ans.gov.br</b></span>
+          </div>
+        </div>
+
+
+        <div class="footer_anterior">
+          <div class="col-md-3 DesenvolvidoPor">
+            <a href="http://lucas-siqueira.com/" target="_blank"
+            title="Lucas Siqueira - Desenvolvedor Web">
+
+                <div class="fundo_imagem">
+                <img src="Images/Logo_redonda.png"></div>
+
+            </a>
+          </div>
+
+          <div class="col-md-7">
+            <span class="Copyright"><b>©COPYRIGHT 2014 - UNIODONTO CAMPOS
+            - TODOS OS DIREITOS RESERVADOS</b></span>
+          </div>
+
+          <div class="col-md-2">
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Facebok" style="float:right;margin-top:15px;">
+              <a href="https://www.facebook.com/pages/Uniodonto-Campos/130851010419929"><img src="Images/facebook-logo.png" /></a>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </footer>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="popover"]').popover()
+  })
+  </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="JS/redireciona_default.js"></script>
+  <script src="JS/encontre.js"></script>
+  </body>
+</html>

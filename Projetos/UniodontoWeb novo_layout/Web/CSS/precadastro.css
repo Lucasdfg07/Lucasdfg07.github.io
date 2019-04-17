@@ -1,0 +1,47 @@
+.formulario {
+  background-color:white;
+  }
+.label_css {
+  padding:10px;
+  }
+
+@media screen and (max-width: 767px) {
+ .botao_form {
+  width:90%;
+  font-size:0.8em;
+  }
+.formulario {
+  background-color:white;
+  margin-left:5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+ .botao_form {
+  width:60%;
+  font-size:0.8em;
+  }
+.formulario {
+  margin-left:35%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .botao_form {
+  width:40%;
+  font-size:0.9em;
+  }
+.formulario {
+  margin-left:35%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+ .botao_form {
+  width:40%;
+  font-size:1em;
+  }
+.formulario {
+  margin-left:35%;
+  }
+}

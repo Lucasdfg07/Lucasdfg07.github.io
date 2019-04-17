@@ -1,0 +1,114 @@
+<div class="container">
+  <h1>Bem vindo(a) à tela de cadastro de Estágios!</h1>
+  <p></p>
+  <%= form_with(model: @relatorio, url: {action: "create"}, local: true) do |f| %>
+    <% if user_signed_in? %>
+      <div class="conteudo">
+        <span>Usuário: <strong><%= current_user.nome %></strong></span>
+
+        <hr />
+
+        <h2>Termo de Compromisso de Estágio - TCE</h2>
+        <h5>Apólice de seguro nº 060982.001.2427, de 13/12/2016</h5>
+        <h4>Seguradora: Empresa MBM SEGURADORA S.A</h4>
+
+        <br />
+
+        <p>
+          <b>O INSTITUTO FEDERAL FLUMINENSE</b>, inscrito no CNPJ/MF sob o nº 10.779.511/0001-07
+          Rua Dr Siqueira nº 273 - Parque Dom Bosco - Campos dos Goytacazes/RJ CEP: 28.030-130,
+          neste Ato representando a Insituição de Ensino <b>PROMOTORA</b>, na pessoa do Sr. Reitor
+          JEFFERSON MANHÃES DE AZEVEDO firma parceria com a Instituição de Ensino <b>CONCEDENTE</b>
+          do Estágio Curricular Supervisionado no IFFluminense <i>campus</i> Campos Centro, inscrito
+          no CNPJ/MF sob o nº 10779511/0001-07, situado na Rua Doutor Siqueira, nº 273, Parque Dom
+          Bosco, no município de Campos dos Goytacazes, estado do Rio de Janeiro, CEP: 28.030-130,
+          telefone (22) 2726-2897, representado por <%= f.text_field :representado_por, required: true, placeholder: 'Pessoa Representante' %>, para fins
+          de abertura de campo de Estágio ao <b>LICENCIANDO</b> <u><%= current_user.nome %></u>,
+          matriculado sob o nº <u><%= current_user.matricula %></u>, no <u><%= current_user.periodo %></u> período do <%= f.select :semestre,['1', '2'], {include_blank:"Selecione"} %>º
+          semestre do ano de <br /> 20<%= f.number_field :ano, min:18, value: 18, required:true %>, no Curso Superior de Licenciatura
+          em <u><%= current_user.licenciatura %></u>, residente na <%= f.text_field :endereco, required:true, placeholder: 'Rua' %>, bairro
+          <%= f.text_field :bairro, required:true, placeholder: 'Bairro' %>, município <%= f.text_field :municipio, required:true, placeholder: 'Cidade' %>, Estado do
+          <%= f.text_field :estado, required:true, placeholder: 'Estado' %>, CEP.: <%= f.text_field :CEP, required:true, placeholder: '00000-000' %>, nos termos da Lei Nº
+          11.788 de 25/09/2008, cujas cláusulas constam e regem o presente contrato:
+
+        </p>
+
+        <div class="periodo_div">
+        PERÍODO: de <%= f.text_field :periodo_de, required:true, placeholder: 'Período' %>
+        </div>
+
+        <br />
+        <br />
+
+        <%= link_to "Voltar", :back, :class => 'btn btn-primary' %>
+        <div class="btn btn-success avancar">
+          Avançar
+        </div>
+        <br />
+        <%= link_to 'Página Inicial', welcome_index_path, :class => 'btn btn-light' %>
+
+      </div>
+
+      <div class="clausulas_conteudo">
+        <div class="clausulas">
+          <h3>Termos e Cláusulas</h3>
+          <hr />
+
+          <p>
+            lorem ipsum
+
+            <br />
+            <br />
+
+            <b>Ao clicar em salvar, você automaticamente concorda que leu e aceita os termos das cláusulas.</b>
+          </p>
+
+          <hr />
+
+          <%= button_tag "Cancelar", :class => 'btn btn-danger cancelar' %>
+          <%= f.submit "Salvar", :class => 'btn btn-success' %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <style type="text/css">
+    .conteudo p {
+      line-height: 2.5;
+      text-align: justify;
+    }
+    .clausulas p {
+      text-align:center;
+    }
+    input {
+      height:30px;
+      border:none;
+      border-bottom:2px dashed black;
+    }
+    .btn-success, .btn-warning {
+      height:40px;
+      margin-left:30px;
+    }
+    .periodo_div {
+      text-align:center;
+    }
+    .clausulas {
+      text-align:center;
+      background-color: rgba(230,230,230,0.6);
+      border-radius:10px;
+      padding:15px;
+      position:absolute;
+      display:none;
+      margin-top:10%;
+      margin-left:20%;
+    }
+    .clausulas_conteudo {
+      height:130%;
+      width:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      display:none;
+    }
+  </style>
+</div>
