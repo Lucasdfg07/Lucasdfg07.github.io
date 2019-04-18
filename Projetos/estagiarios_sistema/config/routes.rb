@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'welcome/update'
   post 'welcome/update'
 
+  get 'welcome/pdf_visualiza'
+
   get 'relatorio_centro/index'
   get 'relatorio_guarus/index'
   get 'relatoutros/index'

@@ -29,8 +29,12 @@ class RelatoutrosController < ApplicationController
     @relatorios.ano = '20'+@relatorios.ano
     @relatorios.matricula_aluno = current_user.matricula
 
+    @relatoutro = Relatoutro.last
+
     if @relatorios.save
       redirect_to welcome_index_path, id: @relatorios.id,  notice: 'Relatório salvo com sucesso!'
+      RelatorioOutrosMailer.contact_message(@relatoutro, current_user).deliver
+      flash[:notice] = 'Mensagem enviada com sucesso'
     else
       redirect_to welcome_index_path, notice: 'Ocorreu um erro ao salvar o relatório, tente novamente mais tarde!'
     end

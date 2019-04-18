@@ -1,0 +1,47 @@
+<div class="container">
+  <h1>Realize a impressão do PDF!</h1>
+  <p></p>
+
+
+  <p class="navbar-text pull-right">
+  <% if user_signed_in? %>
+    <div class="conteudo">
+      <span>Usuário: <strong><%= current_user.nome %></strong></span>
+      <%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'btn btn-warning editar_perfil' %> <br />
+
+      <hr />
+
+      <% if current_user.pdf_centro != '0' || current_user.pdf_guarus != '0' || current_user.pdf_outros != '0'  %>
+        <div class="pdf_btn">
+          <span>Clique aqui e imprima o formulário!</span><br />
+          <% if current_user.pdf_centro != '0' %>
+            <%= link_to 'Gerar PDF', relatorio_centro_index_path(@relatorio, current_user, :format => :pdf), :class => 'btn btn-dark' %>
+          <% end %>
+
+          <% if current_user.pdf_guarus != '0' %>
+            <%= link_to 'Gerar PDF', relatorio_guarus_index_path(@relatorio, current_user, :format => :pdf), :class => 'btn btn-dark' %>
+          <% end %>
+
+          <% if current_user.pdf_outros != '0' %>
+            <%= link_to 'Gerar PDF', relatoutros_index_path(@relatorio, current_user, :format => :pdf), :class => 'btn btn-dark' %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <br />
+    <%= link_to "Sair", destroy_user_session_path, :method => :delete, :class => 'btn btn-danger'  %>
+
+    <% else %>
+
+    <%= link_to "Logar", new_user_session_path, :class => 'btn btn-primary'  %> <br />
+    <%= link_to "Registrar-se", new_user_registration_path, :class => 'btn btn-success registrar-se'  %>
+    <% end %>
+  </div>
+
+  <style type="text/css">
+    .pdf_btn {
+      text-align:center;
+      margin-top:20px;
+    }
+  </style>

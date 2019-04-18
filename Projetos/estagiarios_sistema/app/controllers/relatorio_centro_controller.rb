@@ -29,6 +29,9 @@ class RelatorioCentroController < ApplicationController
     @relatorios.ano = '20'+@relatorios.ano
     @relatorios.matricula_aluno = current_user.matricula
 
+    ContactMailer.contact_message(current_user).deliver
+    flash[:notice] = 'Mensagem enviada com sucesso'
+
     if @relatorios.save
       redirect_to welcome_index_path, id: @relatorios.id,  notice: 'Relatório salvo com sucesso!'
     else
