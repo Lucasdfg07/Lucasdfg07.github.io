@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width" />
+		<title>Lista de Fornecedores</title>
+		<link th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+		rel="stylesheet"/>
+		<link th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap-theme.min.css}"
+		rel="stylesheet"/>
+		
+		<link th:href="@{css/Menu.css}" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<nav class="navbar">
+			<ul>
+				<li><a th:href="@{/}">Página Inicial</a></li>
+				<li><a th:href="@{/fornecedores}">Fornecedores</a></li>
+				<li><a th:href="@{/sobre}">Quem Somos</a></li>
+			</ul>
+		</nav>
+		
+		<div class="panel panel-primary" style="margin: 10px">
+			<div class="panel-heading">
+				<h1 class="panel-title">Quem Somos</h1>
+			</div>
+			
+			<div class="panel-body">
+				<table class="table table-hovered">
+					<thead>
+						<tr>
+							<th>Lucas Siqueira</th>
+							<th>Amanda Leal</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>Estudante de Sistemas de Informação - 5º Período</td>
+							<td>Estudante de Sistemas de Informação - 5º Período</td>
+						</tr>
+						
+						<tr>
+							<td>Trabalho P1 - Tecnologia Web/Mobile</td>
+							<td>Trabalho P1 - Tecnologia Web/Mobile</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<style type="text/css">
+			nav {
+				background-color: rgba(240,240,240,0.6);
+				position: fixed;
+				padding-top:12px;
+				box-shadow: -3px 3px 5px rgba(10,10,10,0.3);
+			}
+			nav > ul > li {
+				display: inline;
+				padding-left: 18%;
+			}
+			nav > ul > li > a {
+				color: black;
+				font-size: 1.1em;
+			}
+			nav > ul > li > a:hover {
+				text-decoration: none;
+				font-weight:bold;
+			}
+		</style>
+
+	</body>
+</html>

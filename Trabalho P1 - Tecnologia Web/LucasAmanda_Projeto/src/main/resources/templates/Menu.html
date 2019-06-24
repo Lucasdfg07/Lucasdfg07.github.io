@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width" />
+		<title>Lista de Convidados</title>
+		<link th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+		rel="stylesheet"/>
+		<link th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap-theme.min.css}"
+		rel="stylesheet"/>
+		
+		<link th:href="@{css/Menu.css}" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<nav class="nav navbar col-md-2">
+			<div class="page-header border-bottom">
+				<h2>Menu</h2>	
+			</div>
+			
+			<ul>
+				<li><a th:href="@{/}">Página Inicial</a></li>
+				<li><a th:href="@{/fornecedores}">Fornecedores</a></li>
+				<li><a th:href="@{/sobre}">Quem Somos</a></li>
+			</ul>
+		</nav>
+		
+		<style type="text/css">
+			.page-header {
+				text-align: center;
+			}
+			nav {
+				background-color: rgba(244,244,244,0.5);
+				box-shadow: -3px 3px 30px rgba(10,10,10,0.3);
+				height: 380px;
+				margin-left:40%;
+				margin-top:100px;
+				border-radius: 20%;
+			}
+			nav > ul > li {
+				border:1px solid black;
+				border-radius:10px;
+				margin-top:30%;
+				display: block;
+				margin-left:-20px;
+			}
+			nav > ul > li > a {
+				color: black;
+				margin-left:25%;
+			}
+			nav > ul > li > a:hover {
+				text-decoration:none;
+				font-weight:bold;
+			}
+		</style>
+
+	</body>
+</html>

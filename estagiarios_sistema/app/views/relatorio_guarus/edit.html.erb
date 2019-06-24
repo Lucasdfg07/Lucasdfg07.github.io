@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Bem vindo(a) à tela de cadastro de Estágios!</h1>
+  <p></p>
+
+  <%= form_with(model: @users, url: {action: "update"}, local: true) do |f| %>
+    <%= f.label 'Para prosseguir, escolha a área de formação' %>
+    <%= f.select :licenciatura, ['Ciências da Natureza: Ciências e Biologia', 'Ciências da Natureza: Ciências e Física',
+    'Ciências da Natureza: Ciências e Química'], {include_blank:"Selecione"} %>
+
+    <br />
+    <%= f.submit 'Prosseguir', :class => 'btn btn-success' %>
+  <% end %>
+</div>

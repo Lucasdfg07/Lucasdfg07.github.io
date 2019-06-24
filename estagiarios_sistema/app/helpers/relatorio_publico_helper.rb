@@ -1,0 +1,2 @@
+module RelatorioPublicoHelper
+end
